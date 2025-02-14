@@ -1,5 +1,12 @@
 /* Autor: Pedro Sánchez García */
-
+/* Css para hacer diferentes tipos de la misma fuente
+.kantumruy-pro-<uniquifier> {
+  font-family: "Kantumruy Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
 
 /* Resets CSS */
 
@@ -54,20 +61,26 @@ table
     border-spacing: 0;
 }
 
+
 /* Tipografía */
 
-@font-face {
-    font-family: Batanga;
-    src: url("../Assets/Fonts/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf");
-  }
+.kantumruy-pro-basic {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-
+.kantumruy-pro-bold {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
 /* HTML */
 
 html 
 {
-    font-family: Batanga;
     background-color: #1D1645;
 }
 
@@ -75,6 +88,10 @@ html
 h1,li,a 
 {
     color: white;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -111,7 +128,7 @@ nav ul
 nav 
 {
     display: flex;
-    justify-content: flex-end;
+    margin-right: 10%;
     
     
 }
@@ -120,11 +137,12 @@ nav ul li
     margin-left: 80px;
     display: inline;
     float: left;
+    margin-top: 37px;
 }
 
 nav ul li a 
 {
-    text-decoration: none;
+    font-size: xx-large;
 }
 
 nav ul li:hover 
@@ -182,7 +200,7 @@ section
 section h1 
 {
     margin-left: 9%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-top: 25px;
 }
 
@@ -195,16 +213,18 @@ article
     margin-bottom: 50px;
 
     width: 80%;
-    margin: 0 auto;
+    margin: 0 9%;
     padding: 10px;
     border-radius: 5px;
 }
 
 span 
 {
+    color: #1F305E;
+}
+.alt{
     color: yellow;
 }
-
 
 
 /* Estilos de la tarjeta */
@@ -212,25 +232,25 @@ span
 {
     background-color: #fff;
     border: 1px solid #ddd;
-    width: 15%;
+    width: 14%;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     transition: transform 0.3s ease-in-out; 
     display: inline-block;
-    margin-bottom: 25px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
-
+.first{
+    margin-left: 10px;
+}
 
 /* Estilo del botón */
 .btn 
 {
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
+    color: black;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -242,11 +262,6 @@ span
 .card:hover 
 {
     transform: translateY(-10px); 
-}
-
-.enlace 
-{
-    color: black;
 }
 img 
 {
@@ -270,8 +285,7 @@ footer
     margin-left: 25px;
 }
 
-#tipografia ul li 
-{
+.foot{
     color: black;
 }
 
