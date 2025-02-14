@@ -109,8 +109,8 @@ header img
 {
     justify-content: flex-end;
     margin-left: 30px;
-    width: 300px;
-    height: 300px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 /* Menú */
@@ -132,7 +132,7 @@ nav
     
     
 }
-nav ul li
+nav ul li, #reviews
 {
     margin-left: 80px;
     display: inline;
@@ -140,12 +140,12 @@ nav ul li
     margin-top: 37px;
 }
 
-nav ul li a 
+nav ul li a, #reviews a
 {
     font-size: xx-large;
 }
 
-nav ul li:hover 
+nav ul li:hover, #reviews:hover
 {
     background-color: #A8A6B3;
     padding: 10px;
@@ -163,18 +163,22 @@ nav ul li:hover
     left: 0;
 }
 
-li:hover .submenu  
+.submenu #reviews{
+    margin-left: 0%;
+}
+
+li:hover .submenu
 {
     display:block;
     
 }
 
-.submenu li a 
+.submenu div a 
 {
+    display: inline-block;
     background-color: #1D1645;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 50px;
     transition: all 0.5s ease-in-out;
 
 }
