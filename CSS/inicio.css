@@ -94,134 +94,6 @@ a{
     text-decoration: none;
 }
 
-
-
-/* Header */
-
-header 
-{
-    display: flex;
-    justify-content: space-between;
-}
-/* Logo */
-
-header img 
-{
-    justify-content: flex-end;
-    margin-left: 30px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-/* Menú */
-
-nav ul 
-{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav 
-{
-    display: flex;
-    margin-right: 10%;
-    
-    
-}
-nav ul li, #reviews
-{
-    margin-left: 80px;
-    display: inline;
-    float: left;
-    margin-top: 37px;
-}
-
-nav ul li a, #reviews a
-{
-    font-size: xx-large;
-}
-
-nav ul li:hover, #reviews:hover
-{
-    background-color: #A8A6B3;
-    padding: 10px;
-    border-radius: 10px;
-    border-bottom: 50px;
-    transition: all 0.5s ease-in-out;
-}
-
-
-
-.submenu 
-{
-    display: none;
-    top: 100%;
-    left: 0;
-}
-
-.submenu #reviews{
-    margin-left: 0%;
-}
-
-li:hover .submenu
-{
-    display:block;
-    
-}
-
-.submenu div a 
-{
-    display: inline-block;
-    background-color: #1D1645;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.5s ease-in-out;
-
-}
-
-
-
-
-/* Imagen lego */
-
-#main_img > img
-{
-    width: 100%;
-}
-
-
-
-/* Section */
-
-section 
-{
-    margin-bottom: 50px;
-}
-section h1 
-{
-    margin-left: 9%;
-    margin-bottom: 10px;
-    margin-top: 25px;
-}
-
-/* Article */
-
-
-article 
-{
-    background-color: #D9D9D9;
-    margin-bottom: 50px;
-
-    width: 80%;
-    margin: 0 9%;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 span 
 {
     color: #1F305E;
@@ -231,18 +103,74 @@ span
 }
 
 
+/* Header */
+
+ header 
+ {
+    width: 100%;
+ }
+
+ header img 
+ {
+    width: 80%;
+    margin-left: 10%;
+ }
+
+nav 
+{
+    display: none;
+}
+
+#mobile
+{
+    display: block;
+    
+}
+
+#main_img 
+{
+    display: none;
+}
+
+section 
+{
+    margin-bottom: 30px;
+}
+section h1 
+{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+section article 
+{
+    background-color: #D9D9D9;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+img 
+{
+    width: 200px;
+}
+
 /* Estilos de la tarjeta */
 .card 
 {
     background-color: #fff;
     border: 1px solid #ddd;
-    width: 14%;
+    width: 40%;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     transition: transform 0.3s ease-in-out; 
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .first{
@@ -267,31 +195,231 @@ span
 {
     transform: translateY(-10px); 
 }
-img 
-{
-    width: 300px;
-}
-
-
 
 footer 
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #D9D9D9;
+        padding: 5px;
+    }
+
+    #tipografia  ul 
+    {
+        margin-top: 10px;
+        color: black;
+        margin-left: 25px;
+    }
+
+    .foot
+    {
+        color: black;
+    }
+/* Media query ESCRITORIO */
+
+@media (min-width:700px)
 {
-    display: flex;
-    justify-content: space-between;
-    background-color: #D9D9D9;
-    padding: 50px;
+
+    /* Header */
+    header 
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Logo */
+
+    header img 
+    {
+        justify-content: flex-end;
+        margin-left: 30px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    /* Menú */
+
+    nav ul 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav 
+    {
+        display: flex;
+        margin-right: 10%;
+        
+        
+    }
+    nav ul li, #reviews
+    {
+        margin-left: 80px;
+        display: inline;
+        float: left;
+        margin-top: 37px;
+    }
+
+    nav ul li a, #reviews a
+    {
+        font-size: xx-large;
+    }
+
+    nav ul li:hover, #reviews:hover
+    {
+        background-color: #A8A6B3;
+        padding: 10px;
+        border-radius: 10px;
+        border-bottom: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+    .submenu 
+    {
+        display: none;
+        top: 100%;
+        left: 0;
+    }
+
+    .submenu #reviews{
+        margin-left: 0%;
+    }
+
+    li:hover .submenu
+    {
+        display:block;
+        
+    }
+
+    .submenu div a 
+    {
+        display: inline-block;
+        background-color: #1D1645;
+        border-radius: 10px;
+        padding: 10px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    #mobile 
+    {
+        display: none;
+    }
+
+
+    /* Imagen lego */
+
+    #main_img > img
+    {
+        width: 100%;
+    }
+
+    #main_img 
+    {
+        display: block;
+    }
+
+
+
+    /* Section */
+
+    section 
+    {
+        margin-bottom: 50px;
+    }
+    section h1 
+    {
+        margin-left: 9%;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    /* Article */
+
+
+    article 
+    {
+        background-color: #D9D9D9;
+        margin-bottom: 50px;
+
+        width: 80%;
+        margin: 0 9%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    
+
+
+    /* Estilos de la tarjeta */
+    .card 
+    {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 14%;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out; 
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    .first{
+        margin-left: 10px;
+    }
+
+    /* Estilo del botón */
+    .btn 
+    {
+        display: inline-block;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    /* Efecto hover sobre la tarjeta */
+    .card:hover 
+    {
+        transform: translateY(-10px); 
+    }
+    img 
+    {
+        width: 300px;
+    }
+
+
+
+    footer 
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #D9D9D9;
+        padding: 50px;
+    }
+
+    #tipografia  ul 
+    {
+        margin-top: 10px;
+        color: black;
+        margin-left: 25px;
+    }
+
+    .foot
+    {
+        color: black;
+    }
 }
 
-#tipografia  ul 
-{
-    margin-top: 10px;
-    color: black;
-    margin-left: 25px;
-}
-
-.foot{
-    color: black;
-}
 
 
 
