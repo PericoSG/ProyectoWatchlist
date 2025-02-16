@@ -1,0 +1,548 @@
+/* Autor: Pedro Sánchez García */
+/* Css para hacer diferentes tipos de la misma fuente
+.kantumruy-pro-<uniquifier> {
+  font-family: "Kantumruy Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* Resets CSS */
+html {
+    background-color: #1D1645;
+}
+
+h1, li, a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Tipografía */
+.kantumruy-pro-basic {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kantumruy-pro-bold {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+/* Estilos generales para versión móvil */
+@media screen and (max-width: 1024px) {
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    margin-right: 0;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-top: 10px;
+}
+
+nav ul li a, #reviews a {
+    font-size: xx-large;
+}
+
+nav ul li:hover, #reviews:hover {
+    background-color: #A8A6B3;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.submenu {
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+.submenu #reviews {
+    margin-left: 0;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+.submenu div a {
+    display: inline-block;
+    background-color: #1D1645;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Section */
+section {
+    margin-bottom: 50px;
+}
+
+section h1 {
+    text-align: center;
+    margin-left: 0;
+}
+
+/* Article */
+.Podcast {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 5px;
+}
+.articulos{
+    width: 90%;
+        margin: 0 auto;
+        background-color: #D9D9D9;
+        padding: 10px;
+        border-radius: 5px;
+}
+.carousel-container {
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cardPodcast {
+    flex: 0 0 auto;
+    width: 80%;
+    margin-left: 5%;
+    scroll-snap-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.card h1 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #1F305E; /* Color del título */
+}
+.card p {
+    font-size: 16px; /* Tamaño del subtítulo */
+    color: #666; /* Color del subtítulo */
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+}
+
+
+.cardArticulo{
+    width: 90%; /* Ocupa el 100% del ancho disponible */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: block; /* Hace que la tarjeta ocupe toda la fila */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
+    margin-left: 10px;
+}
+.cardPodcast:hover {
+    transform: translateY(-10px);
+}
+
+.firstPodcast {
+    margin-left: 10px;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Imágenes */
+img {
+    width: 300px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 50px;
+}
+
+.foot {
+    color: black;
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-left: 80px;
+        margin-top: 0;
+    }
+
+    section h1 {
+        margin-left: 9%;
+    }
+
+    article {
+        display: block;
+        width: 80%;
+        margin: 0 9%;
+    }
+
+    .carousel-container {
+        overflow-x: hidden;
+    }
+
+    .card {
+        width: 14%;
+        margin-left: 25px;
+    }
+
+    .first {
+        margin-left: 10px;
+    }
+}
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+    display: block;
+}
+body 
+{
+    line-height: 1;
+}
+ol, ul 
+{
+    list-style: none;
+}
+blockquote, q 
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: '';
+    content: none;
+}
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+h1,li,a 
+{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo */
+
+header img 
+{
+    justify-content: flex-end;
+    margin-left: 30px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* Menú */
+
+nav ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav 
+{
+    display: flex;
+    margin-right: 10%;
+     
+    
+}
+nav ul li, #reviews
+{
+    margin-left: 30px;
+    display: inline;
+    float: left;
+    margin-top: 37px;
+}
+
+nav ul li a, #reviews a
+{
+    font-size: xx-large;
+}
+
+nav ul li:hover, #reviews:hover
+{
+    background-color: #A8A6B3;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.submenu 
+{
+    display: none;
+    top: 100%;
+    left: 0;
+}
+
+.submenu #reviews{
+    margin-left: 0%;
+}
+
+li:hover .submenu
+{
+    display:block;
+    
+}
+
+.submenu div a 
+{
+    display: inline-block;
+    background-color: #1D1645;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+
+
+/* Imagen lego */
+
+#main_img > img
+{
+    width: 100%;
+}
+
+
+
+/* Section */
+
+section 
+{
+    margin-bottom: 50px;
+}
+section h1 
+{
+    margin-left: 9%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* Article */
+
+
+.Podcast 
+{
+    background-color: #D9D9D9;
+    margin-bottom: 50px;
+    width: 80%;
+    margin: 0 9%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.articulos{
+    width: 80%;
+        margin: 0 9%;
+        background-color: #D9D9D9;
+        padding: 10px;
+        border-radius: 5px;
+}
+
+span 
+{
+    color: #1F305E;
+}
+.alt{
+    color: yellow;
+}
+
+
+/* Estilos de la tarjeta */
+.cardPodcast 
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 14%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+    display: inline-block;
+    margin-left: 25px;
+}
+.cardArticulo{
+    width: 90%; /* Ocupa el 100% del ancho disponible */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: block; /* Hace que la tarjeta ocupe toda la fila */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
+    margin-left: 30px;
+}
+
+.card h1 {
+    font-size: 40px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #1F305E; /* Color del título */
+}
+.card p {
+    font-size: 20px; /* Tamaño del subtítulo */
+    color: #666; /* Color del subtítulo */
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+}
+.firstPodcast{
+    margin-left: 10px;
+}
+
+/* Estilo del botón */
+.btn 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Efecto hover sobre la tarjeta */
+.card:hover 
+{
+    transform: translateY(-10px); 
+}
+img 
+{
+    width: 300px;
+}
+
+
+
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 50px;
+}
+
+#tipografia  ul 
+{
+    margin-top: 10px;
+    color: black;
+    margin-left: 25px;
+}
+
+.foot{
+    color: black;
+}
+
+}
