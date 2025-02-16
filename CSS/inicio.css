@@ -85,7 +85,7 @@ html
 }
 
 
-h1,li,a 
+h1,li,a,h2 
 {
     color: white;
 }
@@ -136,7 +136,7 @@ section
 {
     margin-bottom: 30px;
 }
-section h1 
+section h1,h2 
 {
     font-size: 20px;
     margin-left: 20px;
@@ -261,14 +261,17 @@ footer
         display: inline;
         float: left;
         margin-top: 37px;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 20px;
     }
 
-    nav ul li a, #reviews a
+    nav ul li a, .reviews a
     {
         font-size: xx-large;
+        transition: all 0.5s ease-in-out;
     }
 
-    nav ul li:hover, #reviews:hover
+    nav ul li:hover, .reviews:hover
     {
         background-color: #A8A6B3;
         padding: 10px;
@@ -286,13 +289,15 @@ footer
         left: 0;
     }
 
-    .submenu #reviews{
+    .submenu .reviews
+    {
         margin-left: 0%;
     }
 
     li:hover .submenu
     {
         display:block;
+        transition: all 0.5s ease-in-out;
         
     }
 
@@ -301,7 +306,10 @@ footer
         display: inline-block;
         background-color: #1D1645;
         border-radius: 10px;
-        padding: 10px;
+        margin-bottom: 30px;
+        padding:10px;
+        width: 300px;
+        text-align: center;
         transition: all 0.5s ease-in-out;
 
     }
@@ -332,11 +340,26 @@ footer
     {
         margin-bottom: 50px;
     }
-    section h1 
+    section h1, section h2 
     {
         margin-left: 9%;
         margin-bottom: 10px;
         margin-top: 25px;
+    }
+
+    #search 
+    {
+        margin-top:50px;
+        display: flex;
+        justify-content:end ;
+        position: relative;
+        gap: 10px;
+    }
+
+    #search p 
+    {
+        color: #ddd;
+        margin-top: 5px;
     }
 
     /* Article */
@@ -374,7 +397,7 @@ footer
         margin-left: 10px;
     }
 
-    /* Estilo del botón */
+    /* Estilo del botones */
     .btn 
     {
         display: inline-block;
@@ -385,7 +408,28 @@ footer
         transition: background-color 0.3s ease;
     }
 
+    .filter-btn 
+    {
+        background-color: #DFD355;
+        border: 1px solid #DFD355;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100px;
+    }
 
+    .search-btn 
+    {
+        width: 300px;
+        border-radius: 40px;
+        padding-right: 3px;
+    }
+
+    .search_icon {
+        position: absolute; /* Fija el icono dentro del input */
+        right: 320px; /* Posiciona el icono al final (derecha) del input */
+        top: 50%;
+        transform: translateY(-50%); /* Centra el icono verticalmente */
+    }
 
     /* Efecto hover sobre la tarjeta */
     .card:hover 
@@ -398,6 +442,97 @@ footer
     }
 
 
+    /* Sección de podcasts y artículos*/
+
+    #section-podcasts-articles 
+    {
+        display: flex;
+        justify-content: center; /* Centra el contenido */
+        gap: 40px;
+        margin: 20px;
+    }
+    
+    /* Contenedor de los artículos */
+    .articles-container 
+    {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap; /* Esto permite que los artículos se distribuyan en varias filas si es necesario */
+        justify-content: space-between; /* Alinea los artículos */
+    }
+    
+    /* Estilo para cada artículo (podcast o artículo) */
+    .article 
+    {
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 8px;
+        width: 40%; /* Cada artículo ocupa 48% del ancho (dejando espacio entre ellos) */
+        box-sizing: border-box;
+    }
+    
+    h2.alt 
+    {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    /* Estilo para los contenidos dentro de los artículos (tarjetas) */
+    .podcasts-articles 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .last-items 
+    {
+        width: 100%; /* Las tarjetas ocupan todo el ancho disponible dentro de su artículo */
+    }
+    
+    .last-items img 
+    {
+        width: 40%;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    .last-items h3 
+    {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    
+    
+    .last-items p 
+    {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .text-img 
+    {
+        display: flex;
+    }
+
+    .text-img > p 
+    {
+        margin-left: 10px;
+    }
+
+    .read_article
+    {
+        float: right;
+    }
+    
+    .last-items figcaption 
+    {
+        font-size: 0.9em;
+        color: #777;
+        margin: 10px 0;
+    }
 
     footer 
     {

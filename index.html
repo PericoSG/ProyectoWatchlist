@@ -20,11 +20,19 @@
             <nav>
                 <ul>
                     <li><a href="#">ARTÍCULOS Y PODCAST</a></li>
-                    <li><a href="#">EXPLORAR</a></li>
+                    <li>
+                        <a href="#">EXPLORAR</a>
+                        <ul class="submenu">
+                            <div class="reviews"><a href="#">SERIES</a></div>
+                            <div class="reviews"><a href="#">PELICULAS</a></div>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#">MI PERFIL</a>
                         <ul class="submenu">
-                            <div id="reviews"><a href="#">MIS REVIEWS</a></div>
+                            <div class="reviews"><a href="#">MIS WATCHLISTS</a></div>
+                            <div class="reviews"><a href="#">MIS FAVORITOS</a></div>
+                            <div class="reviews"><a href="#">REVIEWS</a></div>
                         </ul>
                     </li>
                 </ul>
@@ -38,7 +46,22 @@
 
         <section>
 
-            <h1> <a href="#" class="alt">series</a> más recientes</h1>
+            
+
+            <div id="search">
+                <input type="search" class="search-btn" placeholder="¿Qué andas buscando?"/>
+                <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+
+                
+                <p>filtra por</p>
+                <button class="filter-btn">Series</button>
+                <button class="filter-btn">Peliculas</button>
+            </div>
+
+
+            <h2> <a href="#" class="alt">series</a> más recientes</h2>
             <article>
 
                 
@@ -74,7 +97,7 @@
             </article>
 
 
-            <h1> <a href="#" class="alt">películas</a> más recientes</h1>
+            <h2> <a href="#" class="alt">películas</a> más recientes</h2>
             <article>
 
                 
@@ -112,7 +135,7 @@
             </article>
 
 
-            <h1><a href="#" class="alt">series</a> mejor valoradas</h1>
+            <h2><a href="#" class="alt">series</a> mejor valoradas</h2>
             <article>
 
                 
@@ -149,7 +172,7 @@
             </article>
 
 
-            <h1><a href="#" class="alt">películas</a> mejor valoradas</h1>
+            <h2><a href="#" class="alt">películas</a> mejor valoradas</h2>
             <article>
                 <a href="#" class="card first">
                     <img src="Assets/imagenes/prueba.jpg" alt="imagen pelicula">
@@ -183,6 +206,59 @@
 
             </article>
         </section>
+
+
+        <section id="section-podcasts-articles">
+            <div class="articles-container">
+                <article class="article">
+                    <h2 class="alt">Últimos podcasts</h2>
+                    <section class="podcasts-articles">
+                        <article class="last-items">
+                            <h3>Los secretos de FUNBIIE 2</h3>
+                            <figcaption>ÁLVARO AL CUADRADO | 3x23</figcaption>
+                            <div class="text-img">
+                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <p>Los Álvaros han investigado sobre los rumores sobre el rodaje de la segunda entrega de la moñeca más famosa del último año.</p>
+                            </div>
+                           
+                            
+                            
+                        </article>
+                        <article class="last-items">
+                            <h3>No renta ser famoso</h3>
+
+                            <figcaption>Guapas, listas y materialistas | 6x21</figcaption>
+                            <div class="text-img">
+                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <p>Las últimas declaraciones de Marganarina (prota de Oasis) sobre el acoso de ciertos seguidores, dan que pensar a Gabi.</p>
+
+                            </div>
+                            
+                            
+                        </article>
+                    </section>
+                </article>
+        
+                <article class="article">
+                    <h2 class="alt">Últimos artículos</h2>
+                    <section class="podcasts-articles">
+                        <article class="last-items">
+                            <h3>Los secretos de FUNBIIE 2</h3>
+                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
+                            <a href="" class="alt read_article"> > leer artículo</a>
+                        </article>
+                        <article class="last-items">
+                            <h3>No renta ser famoso</h3>
+                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
+                            <a href="" class="alt read_article"> > leer artículo</a>
+                        </article>
+                    </section>
+                </article>
+            </div>
+        </section>
+        
+
+
         <nav id="mobile">
             <ul>
                 <li><a href="#">ARTÍCULOS Y PODCAST</a></li>
