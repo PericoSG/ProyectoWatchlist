@@ -102,6 +102,10 @@ span
     color: yellow;
 }
 
+.more_content{
+    color: darkgoldenrod;
+}
+
 
 /* Header */
 
@@ -312,6 +316,20 @@ footer
         text-align: center;
         transition: all 0.5s ease-in-out;
 
+    }
+
+    .submenu .settings a 
+    {
+       background-color: #D9D9D9;
+       border-radius: 100px;
+       width: 25px;
+       float: right;
+    }
+
+    #settings-icon 
+    {
+        color: #352E5D;
+        
     }
 
     #mobile 
