@@ -101,83 +101,13 @@ section {
 }
 
 section h1 {
-    text-align: center;
+  
     margin-left: 0;
 }
 
-/* Article */
-.Podcast {
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    background-color: #D9D9D9;
-    padding: 10px;
-    border-radius: 5px;
-}
-.articulos{
-    width: 90%;
-        margin: 0 auto;
-        background-color: #D9D9D9;
-        padding: 10px;
-        border-radius: 5px;
-}
-.carousel-container {
-    overflow-x: scroll;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-
-.cardPodcast {
-    flex: 0 0 auto;
-    width: 80%;
-    margin-left: 5%;
-    scroll-snap-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.card h1 {
-    font-size: 24px; /* Tamaño del título */
-    margin-bottom: 10px; /* Espacio debajo del título */
-    color: #1F305E; /* Color del título */
-}
-.card p {
-    font-size: 16px; /* Tamaño del subtítulo */
-    color: #666; /* Color del subtítulo */
-    margin-bottom: 15px; /* Espacio debajo del subtítulo */
-}
 
 
-.cardArticulo{
-    width: 90%; /* Ocupa el 100% del ancho disponible */
-    margin-bottom: 20px; /* Espacio entre tarjetas */
-    padding: 20px; /* Espaciado interno */
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    display: block; /* Hace que la tarjeta ocupe toda la fila */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: inherit; /* Hereda el color del texto */
-    margin-left: 10px;
-}
-.cardPodcast:hover {
-    transform: translateY(-10px);
-}
 
-.firstPodcast {
-    margin-left: 10px;
-}
 
 /* Botón */
 .btn {
@@ -190,8 +120,10 @@ section h1 {
 }
 
 /* Imágenes */
-img {
+.podcast-container img {
     width: 300px;
+    height: 350px;
+    border-radius: 10px; 
 }
 
 /* Footer */
@@ -204,6 +136,55 @@ footer {
 
 .foot {
     color: black;
+}
+
+.podcast-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    background-color: wheat;
+}
+
+
+
+.podcast-text {
+    flex: 1; 
+    
+
+}
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="range"] {
+    width: 100%;
 }
 
 /* Estilos para pantallas grandes */
