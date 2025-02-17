@@ -82,6 +82,7 @@ table
 html 
 {
     background-color: #1D1645;
+    font-family: Kantumruy Pro;
 }
 
 
@@ -129,10 +130,94 @@ nav
     display: none;
 }
 
+/* Menú */
+
 #mobile
 {
     display: block;
     
+}
+
+#desktop 
+{
+    display: none;
+}
+
+#mobile ul 
+{
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+#mobile {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #6d6c72;
+    border-radius: 8px;
+    padding: 0;
+  }
+  #mobile > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  #mobile > ul > li {
+    position: relative;
+  }
+  #mobile > ul > li > a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  #mobile .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px;
+    min-width: 150px;
+  }
+  #mobile > ul > li:hover .submenu 
+  { 
+    display: block;
+  }
+  .submenu .reviews,
+  .submenu .settings {
+    margin-bottom: 10px;
+  }
+  .submenu a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    display: block;
+    padding: 5px 0;
+  }
+  #settings-icon {
+    fill: #fff;
+  }
+  .submenu .reviews:last-of-type,
+  .submenu .settings:last-of-type {
+    margin-bottom: 0;
+  }
+  
+
+#search 
+{
+    display: none;
 }
 
 #main_img 
@@ -244,102 +329,88 @@ footer
         margin-bottom: 10vh;
     }
 
-    /* Menú */
+  /* Menú */
 
-    nav ul 
-    {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+
+  #desktop ul 
+  {
+     
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #1D1645;
+      border-radius: 50px;
+  }
+  
+  #desktop {
+      margin-top: 50px;
+      width: 50%;
+      border-radius: 8px;
+      padding: 0;
+      display: flex ;
+    }
+    #desktop > ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    #desktop > ul > li {
+      position: relative;
+    }
+    #desktop > ul > li > a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    #desktop .submenu {
+      display: none;
+      background-color: #D9D9D9;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      border-radius: 8px;
+      margin: 0;
+      padding: 10px;
+      min-width: 150px;
+    }
+    #desktop > ul > li:hover .submenu 
+    { 
+      display: block;
+    }
+    .submenu .reviews,
+    .submenu .settings {
+      margin-bottom: 10px;
+    }
+    .submenu a {
+      font-size: 13px;
+      text-decoration: none;
+      color: black;
+      font-weight: normal;
+      display: block;
+      padding: 5px 0;
     }
 
-    nav 
-    {
-        display: flex;
-        margin-right: 10%;
-        
-        
+    .submenu .reviews:last-of-type,
+    .submenu .settings:last-of-type {
+      margin-bottom: 0;
     }
-    nav ul li, #reviews
-    {
-        margin-left: 80px;
-        display: inline;
-        float: left;
-        margin-top: 37px;
-        transition: all 0.5s ease-in-out;
-        margin-bottom: 20px;
-    }
-
-    nav ul li a, .reviews a
-    {
-        font-size: xx-large;
-        transition: all 0.5s ease-in-out;
-    }
-
-    nav ul li:hover, .reviews:hover
-    {
-        background-color: #A8A6B3;
-        padding: 10px;
-        border-radius: 10px;
-        border-bottom: 50px;
-        transition: all 0.5s ease-in-out;
-    }
+    
 
 
-
-    .submenu 
-    {
-        display: none;
-        top: 100%;
-        left: 0;
-    }
-
-    .submenu .reviews
-    {
-        margin-left: 0%;
-    }
-
-    li:hover .submenu
-    {
-        display:block;
-        transition: all 0.5s ease-in-out;
-        
-    }
-
-    .submenu div a 
-    {
-        display: inline-block;
-        background-color: #1D1645;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        padding:10px;
-        width: 300px;
-        text-align: center;
-        transition: all 0.5s ease-in-out;
-
-    }
-
-    .submenu .settings a 
-    {
-       background-color: #D9D9D9;
-       border-radius: 100px;
-       width: 25px;
-       float: right;
-    }
-
-    #settings-icon 
-    {
-        color: #352E5D;
-        
-    }
 
     #mobile 
     {
         display: none;
     }
+
+    
 
 
     /* Imagen lego */
