@@ -98,8 +98,12 @@ span
 {
     color: #1F305E;
 }
-.alt{
+.alt
+{
     color: yellow;
+}
+.alt2{
+    color: darkgoldenrod;
 }
 
 .more_content{
