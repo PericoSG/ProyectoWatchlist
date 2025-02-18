@@ -153,34 +153,40 @@ nav
     border-radius: 50px;
 }
 
-#mobile {
+#mobile 
+{
     margin-top: 50px;
     width: 100%;
     background-color: #6d6c72;
     border-radius: 8px;
     padding: 0;
   }
-  #mobile > ul {
+  #mobile > ul 
+  {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
-  #mobile > ul > li {
+  #mobile > ul > li 
+  {
     position: relative;
   }
-  #mobile > ul > li > a {
+  #mobile > ul > li > a 
+  {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: black;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 15px;
   }
-  #mobile .submenu {
+  #mobile .submenu 
+  {
     display: none;
     position: absolute;
     top: 100%;
@@ -195,19 +201,32 @@ nav
     display: block;
   }
   .submenu .reviews,
-  .submenu .settings {
+  .submenu .settings 
+  {
     margin-bottom: 10px;
   }
-  .submenu a {
-    font-size: 13px;
+  .submenu a 
+  {
+    font-size: 10px;
     text-decoration: none;
     color: black;
     font-weight: normal;
     display: block;
     padding: 5px 0;
   }
-  #settings-icon {
-    fill: #fff;
+
+  .submenu a:hover 
+    {
+        background-color: #DFD355;
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    
+  #settings-icon 
+  {
+    fill: black;
   }
   .submenu .reviews:last-of-type,
   .submenu .settings:last-of-type {
@@ -215,10 +234,62 @@ nav
   }
   
 
+#search-mobile 
+{
+    display: inline-block;
+    margin-left: 10%;
+}
+
 #search 
 {
     display: none;
 }
+
+/* Estilo del botones */
+#search-mobile .btn 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#search-mobile .filter-btn 
+{
+    background-color: #DFD355;
+    border: 1px solid #DFD355;
+    padding: 10px;
+    border-radius: 50px;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#search-mobile .search-btn 
+{
+    position: relative;
+    width: 300px;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+#search-mobile .search_icon 
+{
+    position: absolute; 
+    left: 300px; 
+    right: 10%;
+    top: 46.5%;
+    transform: translateY(-50%); 
+}
+
+
+ .search-btn:focus + .search_icon {
+    opacity: 0;
+    pointer-events: none; 
+}
+
 
 #main_img 
 {
@@ -242,6 +313,7 @@ section article
     background-color: #D9D9D9;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 50px;
     border-radius: 15px;
     padding: 5px;
 }
@@ -289,25 +361,76 @@ img
     transform: translateY(-10px); 
 }
 
+
+
+#section-podcasts-articles 
+{
+    display: none;
+}
+
+.text-img
+{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.last-items > *
+{
+    margin-top: 10px;
+}
+
+.last-items > figcaption 
+{
+    font-size: 0.9em;
+        color: #777;
+        margin: 10px 0;
+}
+.text-img > img 
+{
+    width: 100%;
+}
+
+.last-items h3 
+{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.read_article
+{
+    float: right;
+}
 footer 
-    {
-        display: flex;
-        justify-content: space-between;
-        background-color: #D9D9D9;
-        padding: 5px;
-    }
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 10px;
+}
 
-    #tipografia  ul 
-    {
-        margin-top: 10px;
-        color: black;
-        margin-left: 25px;
-    }
+footer img 
+{
+    width: 100px;
+}
 
-    .foot
-    {
-        color: black;
-    }
+ footer a
+{
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 1.5;
+    color: blue;
+}
+
+#tipografia  ul 
+{
+    margin-top: 10px;
+    color: black;
+    margin-left: 25px;
+}
+
+.foot
+{
+    color: black;
+}
 /* Media query ESCRITORIO */
 
 @media (min-width:700px)
@@ -360,6 +483,7 @@ footer
     }
     #desktop > ul > li {
       position: relative;
+      font-size: 30px;
     }
     #desktop > ul > li > a {
       display: inline-block;
@@ -397,13 +521,24 @@ footer
       padding: 5px 0;
     }
 
+    .submenu a:hover 
+    {
+        background-color: #DFD355;
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
     .submenu .reviews:last-of-type,
     .submenu .settings:last-of-type {
       margin-bottom: 0;
     }
     
 
-
+    .settings 
+    {
+        float: right;
+    }
 
     #mobile 
     {
@@ -440,6 +575,10 @@ footer
         margin-top: 25px;
     }
 
+    #search-mobile 
+    {
+        display: none;
+    }
     #search 
     {
         margin-top:50px;
@@ -517,11 +656,12 @@ footer
         padding-right: 3px;
     }
 
-    .search_icon {
-        position: absolute; /* Fija el icono dentro del input */
-        right: 320px; /* Posiciona el icono al final (derecha) del input */
+    .search_icon 
+    {
+        position: absolute; 
+        right: 320px;
         top: 50%;
-        transform: translateY(-50%); /* Centra el icono verticalmente */
+        transform: translateY(-50%); 
     }
 
     /* Efecto hover sobre la tarjeta */
@@ -544,6 +684,11 @@ footer
         gap: 40px;
         margin: 20px;
     }
+
+    #mobile-section-podcasts-articles
+    {
+        display: none;
+    }
     
     /* Contenedor de los artículos */
     .articles-container 
@@ -564,10 +709,9 @@ footer
         box-sizing: border-box;
     }
     
-    h2.alt 
+    .articles-container .article h2 
     {
-        text-align: center;
-        margin-top: 0;
+        font-size: 40px;
     }
     
     /* Estilo para los contenidos dentro de los artículos (tarjetas) */
@@ -615,10 +759,7 @@ footer
         margin-left: 10px;
     }
 
-    .read_article
-    {
-        float: right;
-    }
+    
     
     .last-items figcaption 
     {
@@ -633,6 +774,17 @@ footer
         justify-content: space-between;
         background-color: #D9D9D9;
         padding: 50px;
+    }
+
+    footer img 
+    {
+        width: 170px;
+        margin-bottom: 20px;
+    }
+
+    footer a
+    {
+        font-size: 20px;
     }
 
     #tipografia  ul 
