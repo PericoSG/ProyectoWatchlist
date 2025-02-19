@@ -116,98 +116,35 @@ section h1 {
 }
 
 /* Imágenes */
-.podcast-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    margin-top: 40px; /* Ajusta la imagen para que no quede oculta por el título */
-    margin-left: 40px;
+.articles-container img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    
 }
 
-.desktop{
-    display: none;
+.articles-container{
+    background-color: aqua;
+    max-width: max-content;
 }
-/* Footer */
-footer {
+
+footer 
+{
     display: flex;
     justify-content: space-between;
     background-color: #D9D9D9;
     padding: 50px;
 }
 
-.foot {
-    color: black;
-}
-
-.podcast-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que el texto baje si es más largo que la imagen */
-    align-items: flex-start;
-    gap: 20px;
-    background-color: wheat;
-    padding: 20px;
-    position: relative;
-}
-
-.podcast-text p {
+#tipografia  ul 
+{
     margin-top: 10px;
+    color: black;
+    margin-left: 25px;
 }
 
-.podcast-text h1 {
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-   margin-left: 90px;
-    border-radius: 5px;
-}
-
-.podcast-text {
-    flex: 1; /* Ocupa el espacio disponible */
-    min-width: 300px; /* Evita que el texto sea muy pequeño */
-    display: flex;
-    flex-direction: column;
-}
-.player-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    gap: 10px;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    width: 300px;
-    background-color: #f9f9f9;
-    margin: 0 auto; /* Centra el reproductor en la página */
-    text-align: center; /* Asegura que el texto dentro esté centrado */
-}
-
-.controls {
-    display: flex;
-    justify-content: center; /* Centra los botones dentro del contenedor */
-    gap: 10px;
-}
-
-
-button {
-    padding: 10px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-
-button:hover {
-    background-color: #0056b3;
-}
-
-input[type="range"] {
-    width: 100%;
+.foot{
+    color: black;
 }
 
 /* Estilos para pantallas grandes */
@@ -441,102 +378,21 @@ section h1
 }
 
 /* Article */
-
-/* Contenedor principal */
-.podcast-container {
-    display: flex;
-    flex-direction: column;
-    background-color: wheat;
-    padding: 20px;
-    gap: 20px;
-    position: relative;
+.articles-container {
+    display: flex; /* Usamos flexbox para poder alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: aqua;
+    max-width: max-content;
+    padding: 10px; /* Ajuste opcional para dar algo de espacio interno */
 }
 
-/* Título del podcast */
-.podcast-text h1 {
-    text-align: center; /* Centra el título */
-    width: 100%;
-    margin: 0 0 20px 0; /* Espacio debajo del título */
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+/* Estilo de la imagen */
+.articles-container img {
+    max-width: 50%; /* La imagen no será más ancha que el 50% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
-
-/* Contenedor para la imagen y el texto */
-.podcast-text p {
-    margin: 0; /* Elimina el margen superior */
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: left; /* Alinea el texto a la izquierda */
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
-}
-
-
-/* Texto del podcast */
-.podcast-text p {
-    margin: 0; /* Elimina el margen superior */
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: left; /* Alinea el texto a la izquierda */
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
-}
-
-.mobile{
-    display: none;
-}
-/* Imagen del podcast */
-.podcast-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
-    margin-left: 40%; /* Mueve la imagen a la derecha */
-    margin-bottom: 10px;
-}
-
-/* Reproductor de podcast */
-.player-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    width: 80%; /* Aumenta el tamaño del reproductor */
-    max-width: 600px; /* Limita el ancho máximo */
-    background-color: #f9f9f9;
-    margin-top: 20px; /* Espacio entre el contenido y el reproductor */
-    text-align: center;
-    margin-left: auto; /* Centra el reproductor */
-    margin-right: auto; /* Centra el reproductor */
-}
-
-/* Controles del reproductor */
-.controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Estilos para los botones */
-button {
-    padding: 10px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Barra de progreso */
-input[type="range"] {
-    width: 100%;
-}
-
 
 footer 
 {
