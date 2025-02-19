@@ -35,6 +35,25 @@ a {
     font-weight: bold;
     font-style: normal;
 }
+#verMasPodcast {
+    background: none;
+    border: none;
+    color: black; /* Cambia el color según tu diseño */
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+#verMasPodcast::after {
+    content: "➜"; /* Flecha Unicode */
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Estilos generales para versión móvil */
 @media screen and (max-width: 1024px) {
 
@@ -101,8 +120,9 @@ section {
 }
 
 section h1 {
-    text-align: center;
+    text-align: left;
     margin-left: 0;
+    font-size: xx-large;
 }
 
 /* Article */
@@ -116,6 +136,7 @@ section h1 {
     scroll-snap-type: x mandatory;
     background-color: #D9D9D9;
     padding: 10px;
+    padding-top: 20px;
     border-radius: 5px;
 }
 
@@ -126,7 +147,6 @@ section h1 {
         padding: 10px;
         border-radius: 5px;
 }
-
 .carrusel {
     display: flex;
     overflow-x: auto; /* Permite el desplazamiento horizontal */
@@ -142,7 +162,7 @@ section h1 {
 .carrusel::-webkit-scrollbar {
     display: none;
 }
-
+/* Tarjetas de podcast */
 .cardPodcast {
     flex: 0 0 auto;
     width: 80%;
@@ -152,25 +172,53 @@ section h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: hidden; /* Previene que el contenido se desborde fuera de la tarjeta */
     transition: transform 0.3s ease-in-out;
     display: inline-block;
+    min-height: 200px;
+    padding: 15px; /* Espaciado interno para asegurar que el contenido no se quede pegado a los bordes */
+    box-sizing: border-box; /* Asegura que el padding no se agregue al ancho total de la tarjeta */
+}
+.cardPodcast .enlace {
+    word-wrap: break-word; /* Asegura que el texto largo se ajuste dentro de la tarjeta */
+    white-space: normal; /* Permite que el texto se rompa en varias líneas si es necesario */
+}
+.cardPodcast .enlace {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Si el texto es demasiado largo, muestra puntos suspensivos */
 }
 
-.card h1 {
+/* Imagen dentro de la tarjeta */
+.cardPodcast img {
+    width: 100%; /* Ajusta la imagen al tamaño de la tarjeta */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Evita que la imagen se estire más allá del contenedor */
+}
+
+.cardPodcast {
+    min-height: 250px; /* Ajusta la altura mínima de la tarjeta para que el contenido encaje */
+    height: auto; /* Permite que la tarjeta crezca dependiendo del contenido */
+}
+.cardPodcast h2 {
     font-size: 24px; /* Tamaño del título */
     margin-bottom: 10px; /* Espacio debajo del título */
     color: #1F305E; /* Color del título */
 }
-.card p {
+.cardPodcast p {
     font-size: 16px; /* Tamaño del subtítulo */
     color: #666; /* Color del subtítulo */
     margin-bottom: 15px; /* Espacio debajo del subtítulo */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    overflow: hidden; /* Evita que el texto se desborde */
 }
 
-
-.cardArticulo{
-    width: 90%; /* Ocupa el 100% del ancho disponible */
+/* Tarjetas de artículo */
+.cardArticulo {
+    width: 90%; /* Ancho de la tarjeta */
     margin-bottom: 20px; /* Espacio entre tarjetas */
     padding: 20px; /* Espaciado interno */
     background-color: #fff; /* Fondo blanco */
@@ -182,6 +230,20 @@ section h1 {
     color: inherit; /* Hereda el color del texto */
     margin-left: 10px;
 }
+
+.cardArticulo h1 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #1F305E; /* Color del título */
+}
+
+.cardArticulo p {
+    font-size: 16px; /* Tamaño del subtítulo */
+    color: #666; /* Color del subtítulo */
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
 .cardPodcast:hover {
     transform: translateY(-10px);
 }
@@ -200,6 +262,32 @@ section h1 {
     transition: background-color 0.3s ease;
 }
 
+#verMasArticulos {
+    background: none;
+    border: none;
+    color: black; /* Cambia el color según tu diseño */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding-bottom: 25px;
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+#verMasArticulos::after {
+    content: "↓"; /* Flecha hacia abajo Unicode */
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#verMasArticulosPc
+{
+    display: none;
+}
 /* Imágenes */
 img {
     width: 300px;
@@ -216,10 +304,16 @@ footer {
 .foot {
     color: black;
 }
-.alt{
-    color: rgb(240, 240, 239);
-    font-size: 30px;
-    position: relative;
+.alt-post {
+    color: yellow; /* Hace que el enlace sea amarillo */
+    position: absolute; /* Lo posiciona de manera absoluta dentro de .Podcast */
+   bottom: 650px;
+    left: -10px; /* Lo mueve hacia la izquierda */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Opcional: quitar subrayado */
+    font-weight: bold; /* Hacerlo más visible */
+    font-size: xx-large;
 }
 
 /* Estilos para pantallas grandes */
@@ -457,17 +551,17 @@ section h1
     position: relative;
 }
 
+
+/* Carrusel */
 .carrusel {
     display: flex;
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Fuerza el desplazamiento por tarjetas */
-    gap: 10px; /* Espacio entre tarjetas */
-    padding-bottom: 10px; /* Espacio inferior para evitar cortes */
-    scroll-behavior: smooth; /* Desplazamiento suave */
-    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
-
-
 
 .articulos {
     display: grid;
@@ -489,21 +583,35 @@ span
 
 
 /* Estilos de la tarjeta */
-.cardPodcast 
-{
+.cardPodcast {
     flex: 0 0 auto;
-    width: 40%; /* Ancho fijo de cada tarjeta */
-    scroll-snap-align: start; /* Alinea las tarjetas al inicio */
+    width: 40%;
+    scroll-snap-align: start;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease-in-out;
-    
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de arriba hacia abajo */
+    justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
 }
+.cardPodcast img {
+    width: 100%; /* Ajusta la imagen al tamaño de la tarjeta */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Evita que la imagen se estire más allá del contenedor */
+}
+
+.cardPodcast .enlace {
+    margin-top: auto; /* Empuja el texto hacia abajo si el espacio lo permite */
+    text-align: right; /* Alinea el texto a la derecha */
+    word-wrap: break-word; /* Permite que el texto se ajuste cuando sobrepase el contenedor */
+}
+
+/* Efecto al pasar el mouse */
 .cardPodcast:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.05);
 }
 
 .cardArticulo {
@@ -516,6 +624,11 @@ span
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto */
+}
+.cardPodcast h2 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #1F305E; /* Color del título */
 }
 
 #verMas {
@@ -560,6 +673,32 @@ span
 }
 
 
+#verMasArticulosPc {
+    background: none;
+    border: none;
+    color: rgb(172, 163, 46); /* Cambia el color según tu diseño */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding-bottom: 25px;
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+#verMasArticulosPc::after {
+    content: "↓"; /* Flecha hacia abajo Unicode */
+    font-size: 60px;
+    position: absolute;
+    font-weight: bolder;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#verMasArticulos{
+    display: none;
+}
 
 /* Efecto hover sobre la tarjeta */
 .card:hover 
@@ -592,4 +731,39 @@ footer
     color: black;
 }
 
+/* Efecto hover sobre la tarjeta */
+.card:hover 
+{
+    transform: translateY(-10px); 
 }
+img 
+{
+    width: 300px;
+}
+
+
+
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 50px;
+}
+
+#tipografia  ul 
+{
+    margin-top: 10px;
+    color: black;
+    margin-left: 25px;
+}
+
+.foot{
+    color: black;
+}
+
+
+
+}
+
+
