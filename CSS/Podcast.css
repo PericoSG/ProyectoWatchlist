@@ -117,12 +117,13 @@ section h1 {
 
 /* Imágenes */
 .podcast-container img {
-    width: 300px;
+    width: 100%;
+    max-width: 350px; /* Imagen más pequeña en móviles */
     height: auto;
-    border-radius: 10px;
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    margin-top: 40px; /* Ajusta la imagen para que no quede oculta por el título */
-    margin-left: 40px;
+    margin-bottom: 15px;
+    float: none;
+    margin: 0 auto; /* Asegura que la imagen quede centrada */
+    display: block;
 }
 
 .desktop{
@@ -141,34 +142,41 @@ footer {
 }
 
 .podcast-container {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
     display: flex;
-    flex-wrap: wrap; /* Permite que el texto baje si es más largo que la imagen */
-    align-items: flex-start;
-    gap: 20px;
-    background-color: wheat;
-    padding: 20px;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:#D1C6E1;
 }
 
+
 .podcast-text p {
-    margin-top: 10px;
+    text-align: justify;
+    padding: 0 10px;
 }
 
 .podcast-text h1 {
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-   margin-left: 90px;
-    border-radius: 5px;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.podcast-text {
-    flex: 1; /* Ocupa el espacio disponible */
-    min-width: 300px; /* Evita que el texto sea muy pequeño */
-    display: flex;
-    flex-direction: column;
+.podcast-container h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
 }
+.podcast-text {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center;
+    text-align: center;
+}
+
+ 
 .player-container {
     display: flex;
     flex-direction: column;
@@ -184,28 +192,58 @@ footer {
     text-align: center; /* Asegura que el texto dentro esté centrado */
 }
 
+/* Controles del reproductor */
 .controls {
     display: flex;
-    justify-content: center; /* Centra los botones dentro del contenedor */
-    gap: 10px;
+    justify-content: center;  /* Centra los botones */
+    align-items: center;      /* Alinea los botones verticalmente */
+    gap: 15px;                /* Espacio entre los botones */
+    margin-top: 20px;
 }
-
-
+/* Estilos para los botones */
 button {
     padding: 10px;
     border: none;
-    background-color: #007BFF;
+    background: linear-gradient(90deg, #FF1493, #FF69B4, #FFB6C1, #FFD700);
     color: white;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
 }
 
-
+/* Efecto al pasar el mouse */
 button:hover {
-    background-color: #0056b3;
+    color: #FFF;
 }
 
+button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(90deg, #FF1493, #FF69B4, #FFB6C1, #FFD700);
+    transition: all 0.4s ease;
+    z-index: 0; /* Capa debajo del texto */
+    border-radius: 50%;
+}
+button:hover::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Aseguramos que el texto esté por encima de la animación */
+button span {
+    position: relative;
+    z-index: 1; /* Coloca el texto por encima de la animación */
+}
 input[type="range"] {
     width: 100%;
 }
@@ -446,12 +484,13 @@ section h1
 .podcast-container {
     display: flex;
     flex-direction: column;
-    background-color: wheat;
+    background-color:#D1C6E1;
     width: 50%;
     margin-left: 11%;
     padding: 20px;
     gap: 20px;
     position: relative;
+    margin-left: 22%;
 }
 
 /* Título del podcast */
@@ -471,16 +510,19 @@ section h1
     
 }
 
-
-
-
+.podcast-container h2 {
+    margin-top: 10px; /* Espacio entre imagen y h2 */
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
 .mobile{
     display: none;
 }
 /* Imagen del podcast */
 .podcast-container img {
     float: left;
-    width: 300px;
+    width: 400px;
     height: auto;
     border-radius: 10px;
     flex-shrink: 0;
@@ -509,25 +551,55 @@ section h1
 /* Controles del reproductor */
 .controls {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center;  /* Centra los botones */
+    align-items: center;      /* Alinea los botones verticalmente */
+    gap: 15px;                /* Espacio entre los botones */
+    margin-top: 20px;
 }
-
 /* Estilos para los botones */
 button {
     padding: 10px;
     border: none;
-    background-color: #007BFF;
+    background: linear-gradient(90deg, #FF1493, #FF69B4, #FFB6C1, #FFD700);
     color: white;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
 }
 
+/* Efecto al pasar el mouse */
 button:hover {
-    background-color: #0056b3;
+    color: #FFF;
 }
 
+button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(90deg, #FF1493, #FF69B4, #FFB6C1, #FFD700);
+    transition: all 0.4s ease;
+    z-index: 0; /* Capa debajo del texto */
+    border-radius: 50%;
+}
+button:hover::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Aseguramos que el texto esté por encima de la animación */
+button span {
+    position: relative;
+    z-index: 1; /* Coloca el texto por encima de la animación */
+}
 /* Barra de progreso */
 input[type="range"] {
     width: 100%;
