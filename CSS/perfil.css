@@ -1,0 +1,651 @@
+/* Autor: Pedro Sánchez García */
+/* Css para hacer diferentes tipos de la misma fuente
+.kantumruy-pro-<uniquifier> {
+  font-family: "Kantumruy Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* Resets CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+    display: block;
+}
+body 
+{
+    line-height: 1;
+}
+ol, ul 
+{
+    list-style: none;
+}
+blockquote, q 
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+    content: '';
+    content: none;
+}
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Tipografía */
+
+.kantumruy-pro-basic {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kantumruy-pro-bold {
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+/* HTML */
+
+html 
+{
+    background-color: #1D1645;
+}
+
+
+h1,li,a,h2,h4 
+{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+span
+{
+    color: #1F305E;
+}
+.alt
+{
+    color: yellow;
+}
+.alt2{
+    color: darkgoldenrod;
+}
+.review .alt2{
+    margin-left: 80%;
+}
+.more_content{
+    color: darkgoldenrod;
+}
+
+
+/* Header */
+
+ header 
+ {
+    width: 100%;
+ }
+
+ header img 
+ {
+    width: 80%;
+    margin-left: 10%;
+ }
+
+nav 
+{
+    display: none;
+}
+
+#mobile
+{
+    display: block;
+    
+}
+
+#main_img 
+{
+    display: none;
+}
+
+section 
+{
+    margin-bottom: 30px;
+}
+section h1,h2 
+{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.bigh{
+    font-size: 200%;
+    margin-top: 5%;
+}
+
+
+section article 
+{
+    background-color: #D9D9D9;
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+img 
+{
+    width: 200px;
+}
+.row{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.rev{
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+#user{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+#user img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 100%;
+    display: inline-block;
+}
+#user div{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+#user h1, #user h4{
+    display: inline;
+    font-style: italic;
+}
+#user h1{
+    font-size: 300%;
+}
+#user h4{
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+/* Estilos de la tarjeta */
+.card 
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 40%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.review{
+    width: 42%;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.review img{
+    float: left;
+    display: block;
+    margin: 2%;
+    height: 140px;
+    width: 70px;
+}
+.parr{
+    color: black;
+}
+
+.first{
+    margin-left: 10px;
+}
+
+/* Estilo del botón */
+.btn 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Efecto hover sobre la tarjeta */
+.card:hover 
+{
+    transform: translateY(-10px); 
+}
+
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 5px;
+}
+
+#tipografia  ul 
+{
+    margin-top: 10px;
+    color: black;
+    margin-left: 25px;
+}
+footer a{
+    color: black;
+    font-size: xx-large;
+    text-decoration: underline;
+    height: fit-content;
+}
+/* Media query ESCRITORIO */
+
+@media (min-width:700px)
+{
+
+    /* Header */
+    header 
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Logo */
+
+    header img 
+    {
+        justify-content: flex-end;
+        margin-left: 30px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    /* Menú */
+
+    nav ul 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav 
+    {
+        display: flex;
+        margin-right: 10%;
+        
+        
+    }
+    nav ul li, #reviews
+    {
+        margin-left: 80px;
+        display: inline;
+        float: left;
+        margin-top: 37px;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a, .reviews a
+    {
+        font-size: xx-large;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav ul li:hover, .reviews:hover
+    {
+        background-color: #A8A6B3;
+        padding: 10px;
+        border-radius: 10px;
+        border-bottom: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+    .submenu 
+    {
+        display: none;
+        top: 100%;
+        left: 0;
+    }
+
+    .submenu .reviews
+    {
+        margin-left: 0%;
+    }
+
+    li:hover .submenu
+    {
+        display:block;
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .submenu div a 
+    {
+        display: inline-block;
+        background-color: #1D1645;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding:10px;
+        width: 300px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .submenu .settings a 
+    {
+       background-color: #D9D9D9;
+       border-radius: 100px;
+       width: 25px;
+       float: right;
+    }
+
+    #settings-icon 
+    {
+        color: #352E5D;
+        
+    }
+
+    #mobile 
+    {
+        display: none;
+    }
+
+
+    /* Imagen lego */
+
+    #main_img > img
+    {
+        width: 100%;
+    }
+
+    #main_img 
+    {
+        display: block;
+    }
+
+
+
+    /* Section */
+
+    section 
+    {
+        margin-bottom: 50px;
+    }
+    section h1, section h2 
+    {
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    #search 
+    {
+        margin-top:50px;
+        display: flex;
+        justify-content:end ;
+        position: relative;
+        gap: 10px;
+    }
+
+    #search p 
+    {
+        color: #ddd;
+        margin-top: 5px;
+    }
+
+    /* Article */
+
+
+    article 
+    {
+        background-color: #D9D9D9;
+        margin-bottom: 50px;
+
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    
+
+
+    /* Estilos de la tarjeta */
+    .card 
+    {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 200px;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out; 
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    .review{
+        width: 42%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .review img{
+        float: left;
+        display: block;
+        margin: 2%;
+        height: 140px;
+        width: 70px;
+    }
+    .first{
+        margin-left: 10px;
+    }
+
+    /* Estilo del botones */
+    .btn 
+    {
+        display: inline-block;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .filter-btn 
+    {
+        background-color: #DFD355;
+        border: 1px solid #DFD355;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100px;
+    }
+
+    .search-btn 
+    {
+        width: 300px;
+        border-radius: 40px;
+        padding-right: 3px;
+    }
+
+    .search_icon {
+        position: absolute; /* Fija el icono dentro del input */
+        right: 320px; /* Posiciona el icono al final (derecha) del input */
+        top: 50%;
+        transform: translateY(-50%); /* Centra el icono verticalmente */
+    }
+
+    /* Efecto hover sobre la tarjeta */
+    .card:hover 
+    {
+        transform: translateY(-10px); 
+    }
+    img 
+    {
+        width: 300px;
+    }
+
+
+    /* Sección de podcasts y artículos*/
+
+    #section-podcasts-articles 
+    {
+        display: flex;
+        justify-content: center; /* Centra el contenido */
+        gap: 40px;
+        margin: 20px;
+    }
+    
+    /* Contenedor de los artículos */
+    .articles-container 
+    {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap; /* Esto permite que los artículos se distribuyan en varias filas si es necesario */
+        justify-content: space-between; /* Alinea los artículos */
+    }
+    
+    /* Estilo para cada artículo (podcast o artículo) */
+    .article 
+    {
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 8px;
+        width: 40%; /* Cada artículo ocupa 48% del ancho (dejando espacio entre ellos) */
+        box-sizing: border-box;
+    }
+    
+    h2.alt 
+    {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    /* Estilo para los contenidos dentro de los artículos (tarjetas) */
+    .podcasts-articles 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .last-items 
+    {
+        width: 100%; /* Las tarjetas ocupan todo el ancho disponible dentro de su artículo */
+    }
+    
+    .last-items img 
+    {
+        width: 40%;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+    .last-items h3 
+    {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    
+    
+    .last-items p 
+    {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .text-img 
+    {
+        display: flex;
+    }
+
+    .text-img > p 
+    {
+        margin-left: 10px;
+    }
+
+    .read_article
+    {
+        float: right;
+    }
+    
+    .last-items figcaption 
+    {
+        font-size: 0.9em;
+        color: #777;
+        margin: 10px 0;
+    }
+
+    footer 
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #D9D9D9;
+        padding: 50px;
+    }
+
+    #tipografia  ul 
+    {
+        margin-top: 10px;
+        color: black;
+        margin-left: 25px;
+    }
+
+    .foot
+    {
+        color: black;
+    }
+}
+
