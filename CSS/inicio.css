@@ -311,8 +311,9 @@ section
 section h1,h2 
 {
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 
@@ -328,7 +329,7 @@ section article
 
 img 
 {
-    width: 200px;
+    width: 100%;
 }
 
 /* Estilos de la tarjeta */
@@ -420,6 +421,11 @@ img
     font-size: 1.8em;
     margin-top: 10px;
 }
+
+.last-items p 
+{
+    line-height: 1.5;
+}
 .read_article
 {
     float: right;
@@ -455,6 +461,17 @@ footer img
 .foot
 {
     color: black;
+}
+
+#license-mobile 
+{
+    display: block;
+    margin-left: 22px;
+}
+
+#license-desktop 
+{
+    display: none;
 }
 /* Media query ESCRITORIO */
 
@@ -642,7 +659,7 @@ footer img
     {
         background-color: #fff;
         border: 1px solid #ddd;
-        width: 14%;
+        width: 210px;
         border-radius: 10px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         overflow: hidden;
@@ -650,6 +667,12 @@ footer img
         display: inline-block;
         margin-left: 20px;
     }
+
+    .enlace 
+    {
+       font-size: 13px;
+    }
+    
 
     .first{
         margin-left: 10px;
@@ -709,7 +732,7 @@ footer img
     }
     img 
     {
-        width: 300px;
+        width: 100%;
     }
 
 
@@ -718,7 +741,7 @@ footer img
     #section-podcasts-articles 
     {
         display: flex;
-        justify-content: center; /* Centra el contenido */
+        justify-content: center; 
         gap: 40px;
         margin: 20px;
         margin-top: 0;
@@ -765,7 +788,7 @@ footer img
     
     .last-items 
     {
-        width: 100%; /* Las tarjetas ocupan todo el ancho disponible dentro de su artículo */
+        width: 100%; 
         border-bottom: 2px solid black;
         margin-bottom: 20px;
     }
@@ -791,6 +814,7 @@ footer img
         font-size: 1em;
         margin-top: 10px;
         margin-left: 20px;
+        line-height: 1.5;
     }
 
     .text-img 
@@ -829,6 +853,16 @@ footer img
     footer a
     {
         font-size: 15px;
+    }
+
+    #license-mobile 
+    {
+        display: none;
+    }
+
+    #license-desktop 
+    {
+        display: block;
     }
 
     #tipografia  ul 
