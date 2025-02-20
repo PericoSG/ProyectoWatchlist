@@ -24,13 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     playPauseBtn.addEventListener("click", () => {
         if (audio.paused) {
             audio.play();
-            playPauseBtn.textContent = "⏸️ Pausa";
+            playPauseBtn.innerHTML = "<span>⏸️ Pausa</span>";
         } else {
             audio.pause();
-            playPauseBtn.textContent = "▶️ Play";
+            playPauseBtn.innerHTML = "<span>▶️ Play</span>";
         }
     });
-
     // Retroceder 10 segundos
     rewindBtn.addEventListener("click", () => {
         audio.currentTime -= 10;

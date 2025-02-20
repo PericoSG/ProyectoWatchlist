@@ -46,7 +46,6 @@ a {
 }
 
 #verMasPodcast::after {
-    content: "➜"; /* Flecha Unicode */
     font-size: 40px;
     position: absolute;
     right: 0;
@@ -168,7 +167,7 @@ section h1 {
     width: 80%;
     margin-left: 5%;
     scroll-snap-align: center;
-    background-color: #fff;
+    background-color: #D1C6E1;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -180,8 +179,9 @@ section h1 {
     box-sizing: border-box; /* Asegura que el padding no se agregue al ancho total de la tarjeta */
 }
 .cardPodcast .enlace {
-    word-wrap: break-word; /* Asegura que el texto largo se ajuste dentro de la tarjeta */
+    text-align: left; /* Asegura que el texto largo se ajuste dentro de la tarjeta */
     white-space: normal; /* Permite que el texto se rompa en varias líneas si es necesario */
+    margin-left: -9px;
 }
 .cardPodcast .enlace {
     display: block;
@@ -205,7 +205,7 @@ section h1 {
 }
 .cardPodcast h2 {
     font-size: 24px; /* Tamaño del título */
-    margin-bottom: 10px; /* Espacio debajo del título */
+    margin-bottom: -20px; /* Espacio debajo del título */
     color: #1F305E; /* Color del título */
 }
 .cardPodcast p {
@@ -235,15 +235,21 @@ section h1 {
     font-size: 24px; /* Tamaño del título */
     margin-bottom: 10px; /* Espacio debajo del título */
     color: #1F305E; /* Color del título */
+    background-color: #F0F4F8; /* Fondo suave */
 }
-
 .cardArticulo p {
     font-size: 16px; /* Tamaño del subtítulo */
-    color: #666; /* Color del subtítulo */
+    color: #333333; /* Gris oscuro para el subtítulo */
     margin-bottom: 15px; /* Espacio debajo del subtítulo */
     line-height: 1.5; /* Altura de línea para mejor legibilidad */
 }
 
+
+
+.cuerpo {
+    background-color: #F9F9F9; /* Fondo gris muy claro */
+    color: #444444; /* Gris medio para el texto */
+}
 .cardPodcast:hover {
     transform: translateY(-10px);
 }
@@ -276,13 +282,16 @@ section h1 {
 }
 
 #verMasArticulos::after {
-    content: "↓"; /* Flecha hacia abajo Unicode */
     font-size: 40px;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
 }
+
+#verMasArticulos i {
+    font-size: 32px; /* Cambia el valor del tamaño del ícono */
+  }
 
 #verMasArticulosPc
 {
@@ -604,8 +613,8 @@ span
 }
 
 .cardPodcast .enlace {
-    margin-top: auto;
-    text-align: right;
+    margin-left: -20px;
+    text-align: left;
     word-wrap: break-word;
 }
 
@@ -625,10 +634,21 @@ span
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto */
 }
+
+
+
+
+.cuerpo {
+    background-color: #F9F9F9; /* Fondo gris muy claro */
+    color: #090909; /* Gris medio para el texto */
+}
+
 .cardPodcast h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 25px;
+    margin-bottom: -8px;
     color: #1F305E;
+    margin-top: 20px;
+    
 }
 
 #verMas {
@@ -648,13 +668,14 @@ span
 }
 .card h1 {
     font-size: 30px; /* Tamaño del título */
+   
     margin-bottom: 10px; /* Espacio debajo del título */
     color: #1F305E; /* Color del título */
     text-align: center;
 }
 .card p {
     font-size: 20px; /* Tamaño del subtítulo */
-    color: #666; /* Color del subtítulo */
+    color: #333333; /* Color del subtítulo */
     margin-bottom: 15px; /* Espacio debajo del subtítulo */
 }
 .firstPodcast{
@@ -687,7 +708,7 @@ span
 }
 
 #verMasArticulosPc::after {
-    content: "↓"; /* Flecha hacia abajo Unicode */
+   
     font-size: 60px;
     position: absolute;
     font-weight: bolder;
@@ -695,7 +716,9 @@ span
     bottom: 0;
     transform: translateX(-50%);
 }
-
+#verMasArticulosPc i {
+    font-size: 32px; /* Cambia el valor del tamaño del ícono */
+  }
 #verMasArticulos{
     display: none;
 }

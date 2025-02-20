@@ -36,7 +36,7 @@ a {
     font-style: normal;
 }
 /* Estilos generales para versión móvil */
-@media screen and (max-width: 1024px) {
+
 
 
 /* Header */
@@ -46,6 +46,8 @@ header {
     align-items: center;
     text-align: center;
 }
+
+
 
 nav {
     margin-right: 0;
@@ -124,9 +126,45 @@ section h1 {
 }
 
 .articles-container{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     max-width: max-content;
 }
+
+.article-text {
+    text-align: left; /* Asegura que el texto se alinee a la izquierda */
+    width: 90%; /* Ajuste del ancho para que sea proporcional a la pantalla */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.article-title {
+    font-size: 5vw; /* Tamaño proporcional al ancho de la pantalla */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.article-date {
+    font-size: 2.5vw; /* Tamaño proporcional al ancho de la pantalla */
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.cuerpo {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+@media screen and (max-width: 1024px) {
+    .article-title {
+        font-size: 6vw; /* Aumenta el tamaño en dispositivos más pequeños */
+    }
+
+    .article-date {
+        font-size: 3vw;
+    }
+}
+
 
 footer 
 {
@@ -194,7 +232,7 @@ footer
     }
 }
 
-}
+
 
 
 @media screen and (min-width: 1024px) {
@@ -372,27 +410,61 @@ section
 }
 section h1 
 {
-    margin-left: 9%;
+    margin-left: 4%;
     margin-bottom: 10px;
     margin-top: 25px;
 }
 
 /* Article */
-.articles-container {
-    display: flex; /* Usamos flexbox para poder alinear el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    background-color: aqua;
-    max-width: max-content;
-    padding: 10px; /* Ajuste opcional para dar algo de espacio interno */
+.articles-container img {
+    max-width: 88%;
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 5%;
+    
 }
 
-/* Estilo de la imagen */
-.articles-container img {
-    max-width: 50%; /* La imagen no será más ancha que el 50% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+.articles-container{
+    background-color: rgb(255, 255, 255);
+     width: 60%;
+    margin-left: 20%;
 }
+
+.article-text {
+    text-align: left; /* Asegura que el texto se alinee a la izquierda */
+    width: 90%; /* Ajuste del ancho para que sea proporcional a la pantalla */ /* Centra el contenido */
+    margin-left: 5%;
+}
+
+.article-title {
+    font-size: 2vw; /* Tamaño proporcional al ancho de la pantalla */
+    margin-left: 5%;
+    margin-bottom: 5px;
+    color: black;
+    padding-top: 20px;
+   
+    
+}
+.cuerpo {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+.article-date {
+    font-size: 1.0vw; /* Tamaño proporcional al ancho de la pantalla */
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    
+}
+.article-text p {
+    text-align: left; /* Asegura que el texto se alinee a la izquierda */
+    width: 90%; /* Ajuste del ancho para que sea proporcional a la pantalla */ /* Centra el contenido */
+    margin-left: 5%;
+}
+
 
 footer 
 {
