@@ -447,6 +447,8 @@ section h1
     display: flex;
     flex-direction: column;
     background-color: wheat;
+    width: 50%;
+    margin-left: 11%;
     padding: 20px;
     gap: 20px;
     position: relative;
@@ -454,12 +456,11 @@ section h1
 
 /* Título del podcast */
 .podcast-text h1 {
-    text-align: center; /* Centra el título */
     width: 100%;
-    margin: 0 0 20px 0; /* Espacio debajo del título */
+    margin: 0 0 20px 0;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    font-size: xx-large;
 }
 
 /* Contenedor para la imagen y el texto */
@@ -467,29 +468,24 @@ section h1
     margin: 0; /* Elimina el margen superior */
     flex: 1; /* Ocupa el espacio disponible */
     text-align: left; /* Alinea el texto a la izquierda */
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    
 }
 
 
-/* Texto del podcast */
-.podcast-text p {
-    margin: 0; /* Elimina el margen superior */
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: left; /* Alinea el texto a la izquierda */
-    padding-right: 20px; /* Espacio entre el texto y la imagen */
-}
+
 
 .mobile{
     display: none;
 }
 /* Imagen del podcast */
 .podcast-container img {
+    float: left;
     width: 300px;
     height: auto;
     border-radius: 10px;
     flex-shrink: 0;
-    margin-left: 40%; /* Mueve la imagen a la derecha */
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 /* Reproductor de podcast */

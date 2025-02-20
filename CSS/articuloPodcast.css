@@ -220,7 +220,7 @@ section h1 {
 .cardArticulo {
     width: 90%; /* Ancho de la tarjeta */
     margin-bottom: 20px; /* Espacio entre tarjetas */
-    padding: 20px; /* Espaciado interno */
+    padding: 5%; /* Espaciado interno */
     background-color: #fff; /* Fondo blanco */
     border: 1px solid #ddd; /* Borde ligero */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -228,7 +228,7 @@ section h1 {
     display: block; /* Hace que la tarjeta ocupe toda la fila */
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto */
-    margin-left: 10px;
+ 
 }
 
 .cardArticulo h1 {
@@ -585,7 +585,7 @@ span
 /* Estilos de la tarjeta */
 .cardPodcast {
     flex: 0 0 auto;
-    width: 40%;
+    width: 25%; 
     scroll-snap-align: start;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -594,19 +594,19 @@ span
     padding: 15px;
     transition: transform 0.3s ease-in-out;
     display: flex;
-    flex-direction: column; /* Coloca los elementos de arriba hacia abajo */
-    justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .cardPodcast img {
-    width: 100%; /* Ajusta la imagen al tamaño de la tarjeta */
-    height: auto; /* Mantiene la proporción */
-    max-width: 100%; /* Evita que la imagen se estire más allá del contenedor */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .cardPodcast .enlace {
-    margin-top: auto; /* Empuja el texto hacia abajo si el espacio lo permite */
-    text-align: right; /* Alinea el texto a la derecha */
-    word-wrap: break-word; /* Permite que el texto se ajuste cuando sobrepase el contenedor */
+    margin-top: auto;
+    text-align: right;
+    word-wrap: break-word;
 }
 
 /* Efecto al pasar el mouse */
@@ -626,9 +626,9 @@ span
     color: inherit; /* Hereda el color del texto */
 }
 .cardPodcast h2 {
-    font-size: 24px; /* Tamaño del título */
-    margin-bottom: 10px; /* Espacio debajo del título */
-    color: #1F305E; /* Color del título */
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1F305E;
 }
 
 #verMas {
