@@ -223,7 +223,7 @@ nav
 
   .submenu a:hover 
     {
-        background-color: #DFD355;
+        background-color: #e9df74;
         border-radius: 10px;
         margin-left: 10px;
         padding: 5px;
@@ -245,7 +245,7 @@ nav
 #search-mobile 
 {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 #search 
@@ -266,8 +266,8 @@ nav
 
 #search-mobile .filter-btn 
 {
-    background-color: #DFD355;
-    border: 1px solid #DFD355;
+    background-color: #e9df74;
+    border: 1px solid #e9df74;
     padding: 10px;
     border-radius: 50px;
     width: 150px;
@@ -343,8 +343,9 @@ img
     overflow: hidden;
     transition: transform 0.3s ease-in-out; 
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .first{
@@ -448,7 +449,7 @@ footer img
     font-size: 13px;
     margin-left: 10px;
     line-height: 1.5;
-    color: blue;
+    color: black;
 }
 
 #tipografia  ul 
@@ -565,7 +566,7 @@ footer img
 
     .submenu a:hover 
     {
-        background-color: #DFD355;
+        background-color: #e9df74;
         border-radius: 10px;
         margin-left: 10px;
         padding: 10px;
@@ -691,8 +692,8 @@ footer img
 
     .filter-btn 
     {
-        background-color: #DFD355;
-        border: 1px solid #DFD355;
+        background-color: #e9df74;
+        border: 1px solid #e9df74;
         padding: 10px;
         border-radius: 10px;
         width: 100px;
@@ -702,7 +703,7 @@ footer img
     .filter-btn:hover 
     {
         background-color: #D9D9D9;
-        border: 1px solid #DFD355;
+        border: 1px solid #e9df74;
         padding: 10px;
         border-radius: 10px;
         width: 100px;
