@@ -1,4 +1,12 @@
-/* Autor: Pedro Sánchez García */
+/* 
+    Autores: 
+            Pedro Sánchez García
+            Álvaro Martínez
+            Álvaro Sabater
+            Gabriel Alejandro Martínez Perl
+            Kang Ping Ye
+*/
+
 /* Css para hacer diferentes tipos de la misma fuente
 .kantumruy-pro-<uniquifier> {
   font-family: "Kantumruy Pro", serif;
@@ -223,6 +231,249 @@ footer
     {
         color: black;
     }
+
+
+
+    .breadcrumb {
+        color: #DFD355;
+        font-size: 2em;
+        font-family: "Kantumruy Pro", serif;
+        font-style: italic;
+        padding-bottom: 10px;
+        margin-left: -90px;
+    }
+    
+    .breadcrumbSpan {
+        color: #f8f8f8dc;
+        font-size: 1em;
+        font-family: "Kantumruy Pro", serif;
+        font-style: italic;
+    }
+    
+    .plantilla {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .resumen, .trailer, .reseñas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+        background-color: #e4e3e94d;
+        border-radius: 5px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+    
+    .rating, .actions, .writtenActions {
+        display: flex;
+        margin: 10px 10px;
+        justify-content: center;
+    }
+    
+    .actions { gap: 70px; }
+    
+    .writtenActions { gap: 30px; }
+    .writtenActions span { color: #f7f7f746; font-size: 0.9em; }
+    
+    .fa-star, .fa-star-half-stroke {
+        color: #349c97;
+        font-size: 3em;
+    }
+    
+    .fa-w, .fa-heart-circle-plus {
+        color: #e9e7e4b4;
+        font-size: 5em;
+    }
+    
+    .portada {
+        box-shadow: #ddd 1px 1px 4px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .download-button a {
+        margin-top: 20px;
+        font-size: 1em;
+        background: linear-gradient(45deg, #DFD355, #E4A92C);
+        border-radius: 15px;
+        text-align: center;
+        margin: 3px ;
+        padding: 10px 20px;
+        box-shadow: #082c55 5px 5px 13px;
+        display: inline-block;
+        
+    }
+    
+    .download-buttonWEB {
+        font-size: 0.9em;
+    }
+    
+    .column2 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .rating, .actions, .writtenActions {
+        display: flex;
+        margin: 10px 10px;
+        justify-content: center;
+    }
+    
+    h1.title {
+        font-size: 2.5em;
+        color: rgb(233, 193, 63);
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+    }
+    
+    .fechaSpan, .DirectorSpan, .castSpan {
+        color: #000000;
+        font-size: 1em;
+        font-family: "Kantumruy Pro", serif;
+        font-weight: lighter;
+        
+    }
+
+    .fechaSpan, .DirectorSpan, .castSpan, .details {
+
+        text-align: left;
+    }
+    
+    .synopsis {
+        padding-top: 1em;
+        font-weight: 500;
+        text-align: left;
+    }
+    
+    p { padding-top: 0.3em; }
+    
+    .trailer, .reseñas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .breadcrumbTrailer, .breadcrumbReseñas {
+        margin: 0;
+        color: #A8A6B3;
+        align-self: flex-start;
+    }
+    
+    iframe {
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+    
+    .reseñaDIV {
+        background-color: #e4e3e94d;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 30px;
+        
+    }
+    
+   .reseñaText {
+        font-weight: 500;
+    }
+        
+    
+    
+    .avatarContainer {
+        width: 80px; /* Tamaño fijo */
+        height: 80px; /* Tamaño fijo */
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0; /* Evita que la imagen se reduzca */
+        margin: 15px 10px 0 0; /* Ajusta la distancia entre la imagen y el texto */
+    }
+    
+    .avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    .username {
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+
+
+    .actionsReseña, .actionsReseñaPublicar {
+        position: absolute;
+        bottom: 5px; /* Ajusta la distancia desde abajo */
+        right: 10px; /* Ajusta la distancia desde la derecha */
+        display: flex;
+        gap: 40px; /* Espacio entre iconos */
+    }
+    .actionsReseña i {
+        font-size: 1.2em; /* Ajusta el tamaño de los iconos */
+        cursor: pointer;
+        color: #000000;
+        transition: color 0.3s ease;
+    }
+
+    .actionsReseñaPublicar i {
+        margin-top: 20px;
+        font-size: 1em;
+        background: linear-gradient(45deg, #DFD355, #E4A92C);
+        border-radius: 15px;
+        text-align: center;
+        margin: 3px ;
+        padding: 10px 20px;;
+
+        display: inline-block;
+        
+    }
+
+    .reseñaText textarea {
+        margin-bottom: 20px; /* Ajusta la distancia entre el textarea y los botones */
+        width: 255px; /* Ancho fijo */
+        height: 100px; /* Puedes ajustar la altura si es necesario */
+        resize: none; /* Evita que el textarea se pueda redimensionar */
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 1em;
+        color: #333;
+        font-family: "Kantumruy Pro", serif;
+    }
+    
+    
+
+
+
+
+    
 /* Media query ESCRITORIO */
 
 @media (min-width:700px)
@@ -342,18 +593,6 @@ footer
     }
 
 
-    /* Imagen lego */
-
-    #main_img > img
-    {
-        width: 100%;
-    }
-
-    #main_img 
-    {
-        display: block;
-    }
-
 
 
     /* Section */
@@ -401,24 +640,7 @@ footer
     
 
 
-    /* Estilos de la tarjeta */
-    .card 
-    {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        width: 14%;
-        border-radius: 10px; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out; 
-        display: inline-block;
-        margin-left: 25px;
-    }
-
-    .first{
-        margin-left: 10px;
-    }
-
+    
     /* Estilo del botones */
     .btn 
     {
@@ -464,97 +686,7 @@ footer
     }
 
 
-    /* Sección de podcasts y artículos*/
-
-    #section-podcasts-articles 
-    {
-        display: flex;
-        justify-content: center; /* Centra el contenido */
-        gap: 40px;
-        margin: 20px;
-    }
-    
-    /* Contenedor de los artículos */
-    .articles-container 
-    {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap; /* Esto permite que los artículos se distribuyan en varias filas si es necesario */
-        justify-content: space-between; /* Alinea los artículos */
-    }
-    
-    /* Estilo para cada artículo (podcast o artículo) */
-    .article 
-    {
-        background-color: #f4f4f4;
-        padding: 15px;
-        border-radius: 8px;
-        width: 40%; /* Cada artículo ocupa 48% del ancho (dejando espacio entre ellos) */
-        box-sizing: border-box;
-    }
-    
-    h2.alt 
-    {
-        text-align: center;
-        margin-top: 0;
-    }
-    
-    /* Estilo para los contenidos dentro de los artículos (tarjetas) */
-    .podcasts-articles 
-    {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    
-    .last-items 
-    {
-        width: 100%; /* Las tarjetas ocupan todo el ancho disponible dentro de su artículo */
-    }
-    
-    .last-items img 
-    {
-        width: 40%;
-        height: auto;
-        border-radius: 4px;
-    }
-    
-    .last-items h3 
-    {
-        font-size: 1.2em;
-        margin-top: 10px;
-    }
-
-    
-    
-    .last-items p 
-    {
-        width: 100%;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-
-    .text-img 
-    {
-        display: flex;
-    }
-
-    .text-img > p 
-    {
-        margin-left: 10px;
-    }
-
-    .read_article
-    {
-        float: right;
-    }
-    
-    .last-items figcaption 
-    {
-        font-size: 0.9em;
-        color: #777;
-        margin: 10px 0;
-    }
+    /* FOOTER */
 
     footer 
     {
@@ -640,14 +772,6 @@ footer
         margin-bottom: 10px;
     }
 
-    .download-button {
-        color: white;
-        background-color: #292961;
-        padding: 5px 10px;
-        border-radius: 3px;
-        text-decoration: none;
-        display: inline-block;
-    }
 
     .title {
         color: #ffc107;
@@ -704,6 +828,19 @@ footer
         width: 100%;
         height: 100%;
         border-radius: 4px;
+    }
+
+    .download-button a {
+        margin-top: 20px;
+        font-size: 1em;
+        background: linear-gradient(45deg, #DFD355, #E4A92C);
+        border-radius: 15px;
+        text-align: center;
+        margin: 3px ;
+        padding: 10px 20px;
+        box-shadow: #082c55 5px 5px 13px;
+        display: inline-block;
+        
     }
 
     
