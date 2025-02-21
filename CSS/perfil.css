@@ -294,8 +294,8 @@ section article
     margin-left: 10%;
 }
 #user img{
-    width: 20vh;
-    height: 20vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 100%;
     display: inline-block;
 }
@@ -310,7 +310,7 @@ section article
     font-style: italic;
 }
 #user h1{
-    font-size: 300%;
+    font-size: 160%;
 }
 #user h4{
     font-size: x-large;
@@ -546,6 +546,9 @@ footer img{
     #user img{
         width: 40vh;
         height: 40vh;
+    }
+    #user h1{
+        font-size: 300%;
     }
 
 
