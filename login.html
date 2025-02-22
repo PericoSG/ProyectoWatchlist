@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/login.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="img">
+            <a href="index.html"><img src="Assets/imagenes/logo.png" alt="Logo de Watchlist"></a>
+        </div>
+
+        <nav id="desktop">
+            <ul>
+                <li><a href="articuloPodcast.html">ARTÍCULOS Y PODCAST</a></li>
+                <li>
+                    <a href="explorarPeliculas.html">EXPLORAR</a>
+                    <ul class="submenu">
+                        <a href="explorarSeries.html">SERIES</a>
+                        <a href="explorarPeliculas.html">PELÍCULAS</a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="perfil.html">MI PERFIL</a>
+                    <ul class="submenu">
+                        <a href="perfil.html#watchl">MIS WATCHLISTS</a>
+                        <a href="perfil.html#favoritos">MIS FAVORITOS</a>
+                        <a href="perfil.html#reviews">REVIEWS</a>
+                    </ul>
+                </li>
+                <li class="settings"><a href="#">
+                    <svg id="settings-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                  </svg></a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="mobile">
+            <ul>
+                <li>
+                    <button onclick="location.href='articuloPodcast.html'">ARTÍCULOS Y PODCAST</button>
+                </li>
+                <li>
+                    <button onclick="location.href='perfil.html'">MI PERFIL</button>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <article>
+            <h1 class="kantumruy-pro-bold">Inicia Sesión en <img id="img-section" src="Assets/imagenes/logo.svg" alt=""></h1>
+            
+            <form action="#" method="post">
+
+                <div class="form-field">
+                    <label for="email" class="kantumruy-pro-basic">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password" class="kantumruy-pro-basic">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+            
+            <p class="kantumruy-pro-basic">¿No tienes cuenta? <a href="formulario.html" class="alt">Create una!</a></p>
+        </article>
+    </section>
+
+    <footer>
+
+            
+        <a href="#" class="foot">Atribuciones</a>
+        <a id="license-desktop" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial 4.0 Internacional . </a>
+        
+
+        <div class="foot">
+            <img src="Assets/imagenes/Cc_by-nc_icon.svg.png" alt="imagen licencia">
+            <a id="license-mobile" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC</a>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

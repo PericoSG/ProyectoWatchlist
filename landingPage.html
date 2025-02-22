@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="CSS/landingPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header aria-label="Encabezado de la página">
+        <div class="img">
+            <a href="index.html" aria-label="Ir a la página principal">
+                <img src="Assets/imagenes/logo.png" alt="Logo de Watchlist">
+            </a>
+        </div>
+
+        <nav id="desktop" aria-label="Menú de navegación principal">
+            <ul>
+                <li><a href="articuloPodcast.html" aria-label="Ir a artículos y podcast">ARTÍCULOS Y PODCAST</a></li>
+                <li>
+                    <a href="explorarPeliculas.html" aria-label="Explorar contenido">EXPLORAR</a>
+                    <ul class="submenu">
+                        <div class="reviews">
+                            <li><a href="explorarSeries.html" aria-label="Explorar series">SERIES</a></li>
+                        </div>
+                        <div class="reviews">
+                            <li><a href="explorarPeliculas.html" aria-label="Explorar películas">PELÍCULAS</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="mobile" aria-label="Menú de navegación móvil">
+            <ul>
+                <li>
+                    <button onclick="location.href='articuloPodcast.html'" aria-label="Ir a artículos y podcast">ARTÍCULOS Y PODCAST</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulario" aria-label="Formulario de registro e inicio de sesión">
+        <article aria-labelledby="crear-cuenta">
+            <h1 id="crear-cuenta">Crear cuenta:</h1>
+            <ul>
+                <li><label for="nombre" aria-label="Campo para ingresar nombre">Nombre:</label></li>
+                <li><input type="text" id="nombre" name="nombre" required aria-required="true"></li>
+                
+                <li><label for="email" aria-label="Campo para ingresar correo electrónico">Correo electrónico:</label></li>
+                <li><input type="email" id="email" name="email" required aria-required="true"></li>
+                
+                <li><label for="password" aria-label="Campo para ingresar contraseña">Contraseña:</label></li>
+                <li><input type="password" name="password" id="password" required aria-required="true"></li>
+                
+                <li><label for="telefono" aria-label="Campo para ingresar número de teléfono">Teléfono:</label></li>
+                <li><input type="tel" id="telefono" name="telefono" aria-required="true"></li>
+                
+                <li><label for="pais" aria-label="Campo para ingresar país">País:</label></li>
+                <li><input type="text" id="pais" name="pais" required aria-required="true"></li>
+                
+                <li>
+                    <label for="terminos" aria-label="Casilla para aceptar términos y condiciones">
+                        <input type="checkbox" name="terminos" id="terminos" required aria-required="true">
+                        Acepto los términos y condiciones
+                    </label>
+                </li>
+                <button class="submit" onclick="location.href='index.html'" aria-label="Botón para registrarse">Registrarse</button>
+            </ul>
+        </article>
+
+        <article aria-labelledby="iniciar-sesion">
+            <h1 id="iniciar-sesion">Inicia sesión:</h1>
+            <ul>
+                <li><label for="email-login" aria-label="Campo para ingresar correo electrónico">Correo electrónico:</label></li>
+                <li><input type="text" id="email-login" name="email" required aria-required="true"></li>
+                
+                <li><label for="password-login" aria-label="Campo para ingresar contraseña">Contraseña:</label></li>
+                <li><input type="password" name="password" id="password-login" required aria-required="true"></li>
+                
+                <button class="submit" onclick="location.href='index.html'" aria-label="Botón para iniciar sesión">Iniciar Sesión</button>
+            </ul>
+        </article>
+    </section>
+
+    <footer aria-label="Pie de página">
+        <a href="#" class="foot" aria-label="Ver atribuciones">Atribuciones</a>
+        <a id="license-desktop" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es" aria-label="Ver información de la licencia Creative Commons">Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial 4.0 Internacional.</a>
+        <div class="foot">
+            <img src="Assets/imagenes/Cc_by-nc_icon.svg.png" alt="Icono de licencia Creative Commons">
+            <a id="license-mobile" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es" aria-label="Ver versión móvil de la licencia Creative Commons">CC BY-NC</a>
+        </div>
+    </footer>
+</body>
+</html>
