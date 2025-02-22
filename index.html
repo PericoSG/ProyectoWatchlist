@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 72e489864aef3f932501de06552a296bc9d17920
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchlist</title>
+    <script src="JS/acc_menu.js" defer></script>
     <link rel="stylesheet" href="CSS/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +15,7 @@
         <header>
 
             <div class="img">
-                <a href="index.html"><img src="Assets/imagenes/logo.png" alt="Logo"></a>
+                <a href="index.html"><img src="Assets/imagenes/logo.png" alt="Logo de Watchlist"></a>
             </div>
 
             <nav id="desktop">
@@ -27,382 +24,16 @@
                     <li>
                         <a href="#">EXPLORAR</a>
                         <ul class="submenu">
-                            <div class="reviews"><li><a href="#">SERIES</a></li></div>
-                            <div class="reviews"><li><a href="#">PELÍCULAS</a></li></div>
+                            <a href="explorarSeries.html">SERIES</a>
+                            <a href="explorarPeliculas.html">PELÍCULAS</a>
                         </ul>
                     </li>
                     <li>
                         <a href="#">MI PERFIL</a>
                         <ul class="submenu">
-                            <div class="reviews"><a href="#">MIS WATCHLISTS</a></div>
-                            <div class="reviews"><a href="#">MIS FAVORITOS</a></div>
-                            <div class="reviews"><a href="#">REVIEWS</a></div>
-                            <div class="settings"><a href="#">
-                                <svg id="settings-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                              </svg></a></div>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav id="mobile">
-                <ul>
-                    <li><a href="articuloPodcast.html">ARTÍCULOS Y PODCAST</a></li>
-                    <li>
-                        <a href="#">MI PERFIL</a>
-                        <ul class="submenu">
-                            <div class="reviews"><a href="#">MIS WATCHLISTS</a></div>
-                            <div class="reviews"><a href="#">MIS FAVORITOS</a></div>
-                            <div class="reviews"><a href="#">REVIEWS</a></div>
-                            <div id="settings"><a href="#">
-                                <svg id="settings-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                              </svg></a></div>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="main_img">
-
-            <img src="Assets/imagenes/Inicio/espinardo.jpg" alt="Imagen Lego">
-        </div>
-
-        <section>
-            
-            <div id="search">
-                <input type="search" aria-label="Buscador Series y Películas" class="search-btn" placeholder="¿Qué andas buscando?"/>
-                <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg>
-
-                
-                <p aria-label="filtra por">filtra por</p>
-                <button aria-label="Series" class="filter-btn">Series</button>
-                <button aria-label="Películas" class="filter-btn">Peliculas</button>
-            </div>
-
-            <div id="search-mobile">
-                <button aria-label="SERIES" class="filter-btn">SERIES</button>
-                <button aria-label="PELÍCULAS" class="filter-btn">PELÍCULAS</button>
-                <input type="search" class="search-btn" placeholder="¿Qué andas buscando?"/>
-            </div>
-
-
-            <h2> <a href="" class="alt">series</a> más recientes</h2>
-            <article>
-
-                
-
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Series/(g)old.jpg" alt="imagen serie">
-                    <div class="enlace btn">Old</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/immortal.jpg" alt="imagen serie">
-                    <div class="enlace btn">Inmortal</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/mork.jpg" alt="imagen serie">
-                    <div class="enlace btn">Mork</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/the_three_hunters.jpg" alt="imagen serie">
-                    <div class="enlace btn">The Three Hunters</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/sins_past.jpg" alt="imagen serie">
-                    <div class="enlace btn">Sins Pasts</span></div>
-                </a>
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/penitent.jpg" alt="imagen serie">
-                    <div class="enlace btn">Penitent</div>
-                </a>
-            </article>
-
-
-            <h2> <a href="#" class="alt">películas</a> más recientes</h2>
-            <article>
-
-                
-
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Peliculas/fur_clashers.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Fur Clashers</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/demon_might_die.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Demon Might Die</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sara.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sara</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sons_of_fog.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sons Of Fog</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/paranormal_dates.jpg" alt="imagen pelicula">
-                    <div class="enlace btn"> Paranormal Dates </div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/funbie_2.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Funbie 2</span></div>
-                </a>
-
-            </article>
-
-
-            <h2><a href="#" class="alt">series</a> mejor valoradas</h2>
-            <article>
-
-                
-
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Series/(g)old.jpg" alt="imagen serie">
-                    <div class="enlace btn">Old</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/immortal.jpg" alt="imagen serie">
-                    <div class="enlace btn">Inmortal</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/mork.jpg" alt="imagen serie">
-                    <div class="enlace btn">Mork</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/the_three_hunters.jpg" alt="imagen serie">
-                    <div class="enlace btn">The Three Hunters</div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/sins_past.jpg" alt="imagen serie">
-                    <div class="enlace btn">Sins Pasts</span></div>
-                </a>
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/penitent.jpg" alt="imagen serie">
-                    <div class="enlace btn">Penitent</div>
-                </a>
-            </article>
-
-
-            <h2><a href="#" class="alt">películas</a> mejor valoradas</h2>
-            <article>
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Peliculas/fur_clashers.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Fur Clashers</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/demon_might_die.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Demon Might Die</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sara.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sara</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sons_of_fog.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sons Of Fog</span></div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/paranormal_dates.jpg" alt="imagen pelicula">
-                    <div class="enlace btn"> Paranormal Dates </div>
-                </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/funbie_2.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Funbie 2</span></div>
-                </a>
-
-
-            </article>
-        </section>
-
-
-        <section id="section-podcasts-articles">
-            <div class="articles-container">
-                <article class="article">
-                    <h2 class="alt2">Últimos podcasts</h2>
-                    <section class="podcasts-articles">
-                        <article class="last-items">
-                            <h3>Los secretos de FUNBIIE 2</h3>
-                            <figcaption>ÁLVARO AL CUADRADO | 3x23</figcaption>
-                            <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
-                                <p>Los Álvaros han investigado sobre los rumores sobre el rodaje de la segunda entrega de la moñeca más famosa del último año.</p>
-                            </div>
-                           
-                            
-                            
-                        </article>
-
-
-                        <article class="last-items">
-                            <h3>No renta ser famoso</h3>
-
-                            <figcaption>Guapas, listas y materialistas | 6x21</figcaption>
-                            <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
-                                <p>Las últimas declaraciones de Marganarina (prota de Oasis) sobre el acoso de ciertos seguidores, dan que pensar a Gabi.</p>
-
-                            </div>
-                            
-                            
-                        </article>
-                    </section>
-                </article>
-        
-                <article class="article">
-                    <h2 class="alt2">Últimos artículos</h2>
-                    <section class="podcasts-articles">
-                        <article class="last-items">
-                            <h3>Los secretos de FUNBIIE 2</h3>
-                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
-                            
-                        </article>
-                        <article class="last-items">
-                            <h3>No renta ser famoso</h3>
-                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
-                           
-                        </article>
-                    </section>
-                </article>
-            </div>
-        </section>
-
-
-
-        <section id="mobile-section-podcasts-articles">
-            <div class="mobile-articles-container">
-                <article class="article">
-                    <h2 class="alt2">Últimos podcasts</h2>
-                    <section id="podcasts">
-                        <article class="last-items">
-                            <h3>Los secretos de FUNBIIE 2</h3>
-                            <figcaption>ÁLVARO AL CUADRADO | 3x23</figcaption>
-                            <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
-                                <p>Los Álvaros han investigado sobre los rumores sobre el rodaje de la segunda entrega de la moñeca más famosa del último año.</p>
-                            </div>
-                           
-                            
-                            
-                        </article>
-
-
-                        <article class="last-items">
-                            <h3>No renta ser famoso</h3>
-
-                            <figcaption>Guapas, listas y materialistas | 6x21</figcaption>
-                            <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
-                                <p>Las últimas declaraciones de Marganarina (prota de Oasis) sobre el acoso de ciertos seguidores, dan que pensar a Gabi.</p>
-
-                            </div>
-                            
-                            
-                        </article>
-                    </section>
-                </article>
-        
-                <article class="article">
-                    <h2 class="alt2">Últimos artículos</h2>
-                    <section id="articles">
-                        <article class="last-items">
-                            <h3>Los secretos de FUNBIIE 2</h3>
-                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
-                            
-                        </article>
-                        <article class="last-items">
-                            <h3>No renta ser famoso</h3>
-                            <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
-                           
-                        </article>
-                    </section>
-                </article>
-            </div>
-        </section>
-
-
-        
-
-        <footer>
-
-            
-            <a href="#" class="foot">Atribuciones</a>
-            <a id="license-desktop" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial 4.0 Internacional . </a>
-            
-
-            <div class="foot">
-                <img src="Assets/imagenes/Cc_by-nc_icon.svg.png" alt="imagen licencia">
-                <a id="license-mobile" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">CC BY-NC</a>
-                
-            </div>
-        </footer>
-
-        
-</body>
-<<<<<<< HEAD
-=======
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watchlist</title>
-    <link rel="stylesheet" href="CSS/inicio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-</head>
-<body class="kantumruy-pro-bold">
-    
-        <header>
-
-            <div class="img">
-                <a href="index.html"><img src="Assets/imagenes/logo.png" alt="Logo"></a>
-            </div>
-
-            <nav id="desktop">
-                <ul>
-                    <li><a href="articuloPodcast.html">ARTÍCULOS Y PODCAST</a></li>
-                    <li>
-                        <a href="explorarPeliculas.html">EXPLORAR</a>
-                        <ul class="submenu">
-                            <div class="reviews"><li><a href="explorarSeries.html">SERIES</a></li></div>
-                            <div class="reviews"><li><a href="explorarPeliculas.html">PELICULAS</a></li></div>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="perfil.html">MI PERFIL</a>
-                        <ul class="submenu">
-                            <div class="reviews"><a href="perfil.html#watchl">MIS WATCHLISTS</a></div>
-                            <div class="reviews"><a href="perfil.html#favoritos">MIS FAVORITOS</a></div>
-                            <div class="reviews"><a href="perfil.html#reviews">REVIEWS</a></div>
+                            <a href="#">MIS WATCHLISTS</a>
+                            <a href="#">MIS FAVORITOS</a>
+                            <a href="#">REVIEWS</a>
                         </ul>
                     </li>
                     <li class="settings"><a href="#">
@@ -415,119 +46,113 @@
 
             <nav id="mobile">
                 <ul>
-                    <li><a href="articuloPodcast.html">ARTÍCULOS Y PODCAST</a></li>
                     <li>
-                        <a href="#">MI PERFIL</a>
-                        <ul class="submenu">
-                            <div class="reviews"><a href="#">MIS WATCHLISTS</a></div>
-                            <div class="reviews"><a href="#">MIS FAVORITOS</a></div>
-                            <div class="reviews"><a href="#">REVIEWS</a></div>
-                            <div id="settings"><a href="#">
-                                <svg id="settings-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-                              </svg></a></div>
-                        </ul>
+                        <button onclick="location.href='articuloPodcast.html'">ARTÍCULOS Y PODCAST</button>
                     </li>
-                </ul>
+                    <li>
+                        <button onclick="location.href='perfil.html'">MI PERFIL</button>
+                        </li>
+                    </ul>
             </nav>
         </header>
 
         <div id="main_img">
 
-            <img src="Assets/imagenes/Inicio/espinardo.jpg" alt="Imagen Lego">
+            <img src="Assets/imagenes/portadas/Inicio/espinardo.webp" alt="Imagen de una de nuestras películas personalizadas ESPINARDO">
         </div>
 
         <section>
             
             <div id="search">
-                <input type="search" class="search-btn" placeholder="¿Qué andas buscando?"/>
+                <input type="search" aria-label="Buscar Series y Películas" class="search-btn" placeholder="¿Qué andas buscando?"/>
                 <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                 </svg>
 
                 
-                <p>filtra por</p>
-                <button class="filter-btn">Series</button>
-                <button class="filter-btn">Peliculas</button>
+                <p aria-label="filtra por">filtra por</p>
+                <button aria-label="Series" class="filter-btn">Series</button>
+                <button aria-label="Películas" class="filter-btn">Peliculas</button>
             </div>
 
-            <div id="search-mobile">
-                <button class="filter-btn">Series</button>
-                <button class="filter-btn">Peliculas</button>
+            <div id="buttons-mobile">
+                <button onclick="location.href='explorarSeries.html'"  aria-label="SERIES" class="filter-btn">SERIES</button>
+                <button onclick="location.href='explorarPeliculas.html'" aria-label="PELÍCULAS" class="filter-btn">PELÍCULAS</button>
                 <input type="search" class="search-btn" placeholder="¿Qué andas buscando?"/>
             </div>
 
 
-            <h2> <a href="#" class="alt">series</a> más recientes</h2>
+            <h2> <a href="explorarSeries.html" class="alt" aria-label="Ir a series más recientes">series</a> más recientes</h2>
             <article>
 
                 
 
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Series/(g)old.jpg" alt="imagen serie">
-                    <div class="enlace btn">Old</span></div>
+                <a href="fichaTecnica.html" class="card first" aria-label="Ir a la ficha técnica de la serie Old">
+                    <img src="Assets/imagenes/portadas/Series/(g)old.jpg" alt="imagen de la serie Old, un equipo de fútbol liderado por jubildados que luchan por ser los mejores ">
+                    <div class="enlace btn">Old</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/immortal.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Inmortal">
+                    <img src="Assets/imagenes/portadas/Series/immortal.jpg" alt="imagen de la serie Inmortal, un superhéroe que intenta luchar contra el mal de parademonios">
                     <div class="enlace btn">Inmortal</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/mork.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Mork">
+                    <img src="Assets/imagenes/portadas/Series/mork.jpg" alt="imagen de la serie Mork, El protagonista se envuelve en un linea temporal mientras resuelve el origen de esta">
                     <div class="enlace btn">Mork</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/the_three_hunters.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie The Three Hunters">
+                    <img src="Assets/imagenes/portadas/Series/the_three_hunters.jpg" alt="imagen de la serie The Three Hunters, una pareja que consigue alojarse en Alemania en un casa que es pasto de 3 cazadores">
                     <div class="enlace btn">The Three Hunters</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/sins_past.jpg" alt="imagen serie">
-                    <div class="enlace btn">Sins Pasts</span></div>
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Sins Pasts">
+                    <img src="Assets/imagenes/portadas/Series/sins_past.jpg" alt="imagen de la serie Sins Pasts, Caroline, una hechicera de los 7 mundos del poder debe enfrentarse a un colosal demonio para salvar la Tierra">
+                    <div class="enlace btn">Sins Pasts</div>
                 </a>
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/penitent.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Penitent">
+                    <img src="Assets/imagenes/portadas/Series/penitent.jpg" alt="imagen de la serie Penitent, un sacerdote con identidad anónima tiene una experiencia con Satanas arriesgandose su puesto católico">
                     <div class="enlace btn">Penitent</div>
                 </a>
             </article>
 
 
-            <h2> <a href="#" class="alt">películas</a> más recientes</h2>
+            <h2> <a href="#" class="alt" aria-label="Ir a las películas más recientes">películas</a> más recientes</h2>
             <article>
 
                 
 
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Peliculas/fur_clashers.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Fur Clashers</span></div>
+                <a href="fichaTecnica.html" class="card first" aria-label="Ver detalles de la película 'Fur Clashers'">
+                    <img src="Assets/imagenes/portadas/Películas/fur_clashers.jpg" alt="Imagen de la película 'Fur Clashers', un zorro llamado Leo intenta enamorar a una zorrita en Zorrilandia">
+                    <div class="enlace btn">Fur Clashers</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/demon_might_die.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Demon Might Die</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Demon Might Die'">
+                    <img src="Assets/imagenes/portadas/Películas/demon_might_die.jpg" alt="Imagen de la película 'Demon Might Die', un guerrero que murió en combate en el Siglo XXI se enfrenta a demonios que deciden su destino.">
+                    <div class="enlace btn">Demon Might Die</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sara.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sara</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Sara'">
+                    <img src="Assets/imagenes/portadas/Películas/sara.jpg" alt="Imagen de la película 'Sara', una historia de amor japonesa entre Lorena y Susana, ambientada en la universidad de Informática de Japón.">
+                    <div class="enlace btn">Sara</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sons_of_fog.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sons Of Fog</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Sons Of Fog'">
+                    <img src="Assets/imagenes/portadas/Películas/sons_of_fog.jpg" alt="Imagen de la película 'Sons of Fog', una animación que lleva al mundo de las Almas Perdidas, donde una maga lucha para aprender poderes oscuros.">
+                    <div class="enlace btn">Sons Of Fog</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/paranormal_dates.jpg" alt="imagen pelicula">
-                    <div class="enlace btn"> Paranormal Dates </div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Paranormal Dates'">
+                    <img src="Assets/imagenes/portadas/Películas/paranormal_dates.jpg" alt="Imagen de la película 'Paranormal Dates', Pedro y Zaira, amigos desde el instituto, enfrentan un cambio cuando Pedro adquiere poderes para enamorar a las personas.">
+                    <div class="enlace btn">Paranormal Dates</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/funbie_2.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Funbie 2</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Funbie 2'">
+                    <img src="Assets/imagenes/portadas/Películas/funbie_2.jpg" alt="Imagen de la película 'Funbie 2', una muñeca adorable que lleva una vida normal hasta que el grupo 'Se viene el aprobado' intenta conquistarlo.">
+                    <div class="enlace btn">Funbie 2</div>
                 </a>
+                
 
             </article>
 
@@ -537,32 +162,32 @@
 
                 
 
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Series/(g)old.jpg" alt="imagen serie">
-                    <div class="enlace btn">Old</span></div>
+                <a href="fichaTecnica.html" class="card first" aria-label="Ir a la ficha técnica de la serie Old">
+                    <img src="Assets/imagenes/portadas/Series/(g)old.jpg" alt="imagen de la serie Old, un equipo de fútbol liderado por jubildados que luchan por ser los mejores ">
+                    <div class="enlace btn">Old</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/immortal.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Inmortal">
+                    <img src="Assets/imagenes/portadas/Series/immortal.jpg" alt="imagen de la serie Inmortal, un superhéroe que intenta luchar contra el mal de parademonios">
                     <div class="enlace btn">Inmortal</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/mork.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Mork">
+                    <img src="Assets/imagenes/portadas/Series/mork.jpg" alt="imagen de la serie Mork, El protagonista se envuelve en un linea temporal mientras resuelve el origen de esta">
                     <div class="enlace btn">Mork</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/the_three_hunters.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie The Three Hunters">
+                    <img src="Assets/imagenes/portadas/Series/the_three_hunters.jpg" alt="imagen de la serie The Three Hunters, una pareja que consigue alojarse en Alemania en un casa que es pasto de 3 cazadores">
                     <div class="enlace btn">The Three Hunters</div>
                 </a>
 
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/sins_past.jpg" alt="imagen serie">
-                    <div class="enlace btn">Sins Pasts</span></div>
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Sins Pasts">
+                    <img src="Assets/imagenes/portadas/Series/sins_past.jpg" alt="imagen de la serie Sins Pasts, Caroline, una hechicera de los 7 mundos del poder debe enfrentarse a un colosal demonio para salvar la Tierra">
+                    <div class="enlace btn">Sins Pasts</div>
                 </a>
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Series/penitent.jpg" alt="imagen serie">
+                <a href="fichaTecnica.html" class="card" aria-label="Ir a la ficha técnica de la serie Penitent">
+                    <img src="Assets/imagenes/portadas/Series/penitent.jpg" alt="imagen de la serie Penitent, un sacerdote con identidad anónima tiene una experiencia con Satanas arriesgandose su puesto católico">
                     <div class="enlace btn">Penitent</div>
                 </a>
             </article>
@@ -570,35 +195,36 @@
 
             <h2><a href="#" class="alt">películas</a> mejor valoradas</h2>
             <article>
-                <a href="fichaTecnica.html" class="card first">
-                    <img src="Assets/imagenes/Peliculas/fur_clashers.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Fur Clashers</span></div>
+                <a href="fichaTecnica.html" class="card first" aria-label="Ver detalles de la película 'Fur Clashers'">
+                    <img src="Assets/imagenes/portadas/Películas/fur_clashers.jpg" alt="Imagen de la película 'Fur Clashers', un zorro llamado Leo intenta enamorar a una zorrita en Zorrilandia">
+                    <div class="enlace btn">Fur Clashers</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/demon_might_die.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Demon Might Die</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Demon Might Die'">
+                    <img src="Assets/imagenes/portadas/Películas/demon_might_die.jpg" alt="Imagen de la película 'Demon Might Die', un guerrero que murió en combate en el Siglo XXI se enfrenta a demonios que deciden su destino.">
+                    <div class="enlace btn">Demon Might Die</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sara.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sara</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Sara'">
+                    <img src="Assets/imagenes/portadas/Películas/sara.jpg" alt="Imagen de la película 'Sara', una historia de amor japonesa entre Lorena y Susana, ambientada en la universidad de Informática de Japón.">
+                    <div class="enlace btn">Sara</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/sons_of_fog.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Sons Of Fog</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Sons Of Fog'">
+                    <img src="Assets/imagenes/portadas/Películas/sons_of_fog.jpg" alt="Imagen de la película 'Sons of Fog', una animación que lleva al mundo de las Almas Perdidas, donde una maga lucha para aprender poderes oscuros.">
+                    <div class="enlace btn">Sons Of Fog</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/paranormal_dates.jpg" alt="imagen pelicula">
-                    <div class="enlace btn"> Paranormal Dates </div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Paranormal Dates'">
+                    <img src="Assets/imagenes/portadas/Películas/paranormal_dates.jpg" alt="Imagen de la película 'Paranormal Dates', Pedro y Zaira, amigos desde el instituto, enfrentan un cambio cuando Pedro adquiere poderes para enamorar a las personas.">
+                    <div class="enlace btn">Paranormal Dates</div>
                 </a>
-
-                <a href="fichaTecnica.html" class="card">
-                    <img src="Assets/imagenes/Peliculas/funbie_2.jpg" alt="imagen pelicula">
-                    <div class="enlace btn">Funbie 2</span></div>
+                
+                <a href="fichaTecnica.html" class="card" aria-label="Ver detalles de la película 'Funbie 2'">
+                    <img src="Assets/imagenes/portadas/Películas/funbie_2.jpg" alt="Imagen de la película 'Funbie 2', una muñeca adorable que lleva una vida normal hasta que el grupo 'Se viene el aprobado' intenta conquistarlo.">
+                    <div class="enlace btn">Funbie 2</div>
                 </a>
+                
 
 
             </article>
@@ -614,7 +240,7 @@
                             <h3>Los secretos de FUNBIIE 2</h3>
                             <figcaption>ÁLVARO AL CUADRADO | 3x23</figcaption>
                             <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <img src="Assets/imagenes/portadas/Podcasts/alvaro_al_cuadrado.webp" alt="Imagen relacionada con el podcast 'Los secretos de FUNBIIE 2', mostrando un collage de imágenes del rodaje de la película.">
                                 <p>Los Álvaros han investigado sobre los rumores sobre el rodaje de la segunda entrega de la moñeca más famosa del último año.</p>
                             </div>
                            
@@ -628,7 +254,7 @@
 
                             <figcaption>Guapas, listas y materialistas | 6x21</figcaption>
                             <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <img src="Assets/imagenes/portadas/Podcasts/guapas_listas_materialistas.webp" alt="Imagen relacionada con el podcast 'No renta ser famoso', mostrando una ilustración de las protagonistas del podcast.">
                                 <p>Las últimas declaraciones de Marganarina (prota de Oasis) sobre el acoso de ciertos seguidores, dan que pensar a Gabi.</p>
 
                             </div>
@@ -644,13 +270,13 @@
                         <article class="last-items">
                             <h3>Los secretos de FUNBIIE 2</h3>
                             <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
+                            <a href="" class="more_content read_article" aria-label="Leer el artículo 'Los secretos de FUNBIIE 2' completo"> > leer artículo</a>
                             
                         </article>
                         <article class="last-items">
                             <h3>No renta ser famoso</h3>
                             <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
+                            <a href="" class="more_content read_article " aria-label="Leer el artículo 'no renta ser famoso' completo"> > leer artículo</a>
                            
                         </article>
                     </section>
@@ -669,7 +295,7 @@
                             <h3>Los secretos de FUNBIIE 2</h3>
                             <figcaption>ÁLVARO AL CUADRADO | 3x23</figcaption>
                             <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <img src="Assets/imagenes/portadas/Podcasts/alvaro_al_cuadrado.webp" alt="Imagen relacionada con el podcast 'Los secretos de FUNBIIE 2', mostrando un collage de imágenes del rodaje de la película.">
                                 <p>Los Álvaros han investigado sobre los rumores sobre el rodaje de la segunda entrega de la moñeca más famosa del último año.</p>
                             </div>
                            
@@ -683,7 +309,7 @@
 
                             <figcaption>Guapas, listas y materialistas | 6x21</figcaption>
                             <div class="text-img">
-                                <img src="Assets/imagenes/prueba.jpg" alt="">
+                                <img src="Assets/imagenes/portadas/Podcasts/guapas_listas_materialistas.webp" alt="Imagen relacionada con el podcast 'No renta ser famoso', mostrando una ilustración de las protagonistas del podcast.">
                                 <p>Las últimas declaraciones de Marganarina (prota de Oasis) sobre el acoso de ciertos seguidores, dan que pensar a Gabi.</p>
 
                             </div>
@@ -699,13 +325,13 @@
                         <article class="last-items">
                             <h3>Los secretos de FUNBIIE 2</h3>
                             <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
+                            <a href="" class="more_content read_article" aria-label="Leer el artículo 'Los secretos de FUNBIIE 2' completo"> > leer artículo</a>
                             
                         </article>
                         <article class="last-items">
                             <h3>No renta ser famoso</h3>
                             <p>Si te detienes a pensar, solo te vendrán a la mente dos, o a lo sumo tres, distribuidoras de películas en España. CINESA seguro que es una de ellas, y aquí te contamos cómo llegaron a ser el titán que es en la actualidad.</p>
-                            <a href="" class="more_content read_article"> > leer artículo</a>
+                            <a href="" class="more_content read_article" aria-label="Leer el artículo 'no renta ser famoso' completo"> > leer artículo</a>
                            
                         </article>
                     </section>
@@ -732,6 +358,4 @@
 
         
 </body>
->>>>>>> cbeda08722137775212be52b767b25a99ea9ff54
->>>>>>> 72e489864aef3f932501de06552a296bc9d17920
 </html>
