@@ -175,7 +175,7 @@ nav
 }
 
 #mobile .submenu {
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -566,6 +566,7 @@ footer img
       margin: 0;
       padding: 10px;
       min-width: 150px;
+      transition: all 0.1s ease-in-out;
     }
     #desktop > ul > li:hover .submenu 
     { 
@@ -575,6 +576,7 @@ footer img
     { 
       visibility: visible;
     }
+
     .submenu .reviews,
     .submenu .settings {
       margin-bottom: 10px;
