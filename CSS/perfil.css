@@ -100,13 +100,13 @@ span
 }
 .alt
 {
-    color: yellow;
+    color: #e9df74;
 }
 .alt2{
     color: darkgoldenrod;
 }
 .review .alt2{
-    margin-left: 80%;
+    margin-left: 50%;
 }
 .more_content{
     color: darkgoldenrod;
@@ -115,32 +115,145 @@ span
 
 /* Header */
 
- header 
- {
-    width: 100%;
- }
+header 
+{
+   width: 100%;
+}
 
- header img 
- {
-    width: 80%;
-    margin-left: 10%;
- }
+header img 
+{
+   width: 80%;
+   margin-left: 10%;
+}
 
 nav 
 {
-    display: none;
+   display: none;
 }
+
+/* Menú */
 
 #mobile
 {
-    display: block;
-    
+   display: block;
+   
 }
 
-#main_img 
+#desktop 
 {
-    display: none;
+   display: none;
 }
+
+#mobile ul 
+{
+  
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   background-color: #D9D9D9;
+   border-radius: 50px;
+}
+
+#mobile 
+{
+
+   margin-top: 50px;
+   margin-left: 25px;
+   width: 90%;
+   border-radius: 8px;
+   padding: 0;
+}
+
+#mobile:has(ul > li:hover > .submenu) 
+{
+   margin-bottom: 100px;
+}
+ #mobile > ul 
+ {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+ }
+ #mobile > ul > li 
+ {
+   position: relative;
+ }
+ #mobile > ul > li > a 
+ {
+   display: inline-block;
+   padding: 10px 10px;
+   color: #1d1645;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: bold;
+   font-size: 15px;
+ }
+ #mobile .submenu 
+ {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   border-radius: 8px;
+   margin: 0;
+   padding: 10px;
+   min-width: 150px;
+ }
+ #mobile > ul > li > a:focus + .submenu 
+ { 
+   display: block;
+ }
+ #mobile > ul > li:hover .submenu 
+ { 
+   display: block;
+ }
+ .submenu .reviews,
+ .submenu .settings 
+ {
+   margin-bottom: 10px;
+ }
+ .submenu a 
+ {
+   font-size: 10px;
+   text-decoration: none;
+   border-radius: 6px;
+   color: #1d1645;
+   font-weight: normal;
+   display: block;
+   padding: 10px;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .submenu a:hover 
+   {
+       background-color: #e9df74;
+       color: #1d1645;
+   }
+
+   
+
+   
+ #settings-icon 
+ {
+   fill: white;
+   transition: all 0.3s ease-in-out;
+ }
+
+.settings > a:focus > #settings-icon{
+    fill: #e9df74;
+}
+.settings:hover > a > #settings-icon{
+    fill: #e9df74;
+}
+
+ .submenu .reviews:last-of-type,
+ .submenu .settings:last-of-type {
+   margin-bottom: 0;
+ }
 
 section 
 {
@@ -149,11 +262,13 @@ section
 section h1,h2 
 {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 7px;
 }
 .bigh{
     font-size: 200%;
     margin-top: 5%;
+    margin-left: 2%;
 }
 
 
@@ -161,14 +276,14 @@ section article
 {
     background-color: #D9D9D9;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px;
     overflow: hidden;
 }
 
-img 
+.card img 
 {
-    width: 200px;
+    width: 100%;
 }
 .row{
     margin: 0 auto;
@@ -186,8 +301,8 @@ img
     margin-left: 10%;
 }
 #user img{
-    width: 40vh;
-    height: 40vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 100%;
     display: inline-block;
 }
@@ -202,7 +317,7 @@ img
     font-style: italic;
 }
 #user h1{
-    font-size: 300%;
+    font-size: 160%;
 }
 #user h4{
     font-size: x-large;
@@ -224,10 +339,11 @@ img
     margin-top: 5px;
 }
 .review{
-    width: 42%;
+    width: 90%;
     margin-right: 2%;
     margin-left: 2%;
-    padding: 1%;
+    margin-top: 5%;
+    padding: 2%;
 }
 
 .review img{
@@ -238,19 +354,19 @@ img
     width: 70px;
 }
 .parr{
-    color: black;
+    color: #1d1645;
 }
 
-.first{
+/* .first{
     margin-left: 10px;
-}
+} */
 
 /* Estilo del botón */
 .btn 
 {
     display: inline-block;
     padding: 10px 20px;
-    color: black;
+    color: #1d1645;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -262,6 +378,24 @@ img
 .card:hover 
 {
     transform: translateY(-10px); 
+}
+.review:hover{
+    transform: none;
+}
+
+.review a:hover{
+    background-color: #e9df74;
+}
+.review a{
+    transition: all 0.3s ease-in-out;
+    padding: 7px;
+    border-radius: 15px;
+}
+.rtit{
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #1d1645;
 }
 
 footer 
@@ -275,14 +409,17 @@ footer
 #tipografia  ul 
 {
     margin-top: 10px;
-    color: black;
+    color: #1d1645;
     margin-left: 25px;
 }
 footer a{
-    color: black;
-    font-size: xx-large;
+    color: #1d1645;
+    font-size: large;
     text-decoration: underline;
     height: fit-content;
+}
+footer img{
+    width: 100px;
 }
 /* Media query ESCRITORIO */
 
@@ -305,96 +442,96 @@ footer a{
         margin-bottom: 10vh;
     }
 
-    /* Menú */
+  /* Menú */
 
-    nav ul 
-    {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+
+  #desktop ul 
+  {
+     
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #1D1645;
+      border-radius: 50px;
+  }
+  
+  #desktop {
+      margin-top: 50px;
+      width: 50%;
+      border-radius: 8px;
+      padding: 0;
+      display: flex;
     }
-
-    nav 
-    {
-        display: flex;
-        margin-right: 10%;
-        
-        
+    #desktop > ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
     }
-    nav ul li, #reviews
-    {
-        margin-left: 80px;
-        display: inline;
-        float: left;
-        margin-top: 37px;
-        transition: all 0.5s ease-in-out;
-        margin-bottom: 20px;
+    #desktop > ul > li {
+      position: relative;
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
     }
-
-    nav ul li a, .reviews a
-    {
-        font-size: xx-large;
-        transition: all 0.5s ease-in-out;
+    #desktop > ul > li > a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
     }
-
-    nav ul li:hover, .reviews:hover
-    {
-        background-color: #A8A6B3;
-        padding: 10px;
-        border-radius: 10px;
-        border-bottom: 50px;
-        transition: all 0.5s ease-in-out;
+    #desktop .submenu {
+      display: block;
+      background-color: #D9D9D9;
+      position: absolute;
+      visibility: hidden;
+      top: 100%;
+      left: 0;
+      border-radius: 8px;
+      margin: 0;
+      padding: 10px;
+      min-width: 150px;
+      transition: all 0.3s ease-in-out;
     }
-
-
-
-    .submenu 
-    {
-        display: none;
-        top: 100%;
-        left: 0;
+    #desktop > ul > li > a:focus + .submenu  
+    { 
+      visibility: visible;
     }
-
-    .submenu .reviews
-    {
-        margin-left: 0%;
+    #desktop > ul > li:hover .submenu  
+    { 
+      visibility: visible;
     }
-
-    li:hover .submenu
-    {
-        display:block;
-        transition: all 0.5s ease-in-out;
-        
+    #desktop > ul > li > a:focus
+    { 
+      color: #e9df74;
     }
-
-    .submenu div a 
-    {
-        display: inline-block;
-        background-color: #1D1645;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        padding:10px;
-        width: 300px;
-        text-align: center;
-        transition: all 0.5s ease-in-out;
-
+    #desktop > ul > li:hover > a
+    { 
+      color: #e9df74;
     }
-
-    .submenu .settings a 
-    {
-       background-color: #D9D9D9;
-       border-radius: 100px;
-       width: 25px;
-       float: right;
+    .submenu .reviews,
+    .submenu .settings {
+      margin-bottom: 10px;
     }
+    .submenu a {
+      font-size: 13px;
+    }
+    
+    .submenu .reviews:last-of-type,
+    .submenu .settings:last-of-type {
+      margin-bottom: 0;
+    }
+    
 
-    #settings-icon 
+    .settings 
     {
-        color: #352E5D;
-        
+        float: right;
     }
 
     #mobile 
@@ -402,19 +539,14 @@ footer a{
         display: none;
     }
 
-
-    /* Imagen lego */
-
-    #main_img > img
-    {
-        width: 100%;
+    
+    #user img{
+        width: 40vh;
+        height: 40vh;
     }
-
-    #main_img 
-    {
-        display: block;
+    #user h1{
+        font-size: 300%;
     }
-
 
 
     /* Section */
@@ -425,7 +557,7 @@ footer a{
     }
     section h1, section h2 
     {
-        margin-bottom: 10px;
+        margin-bottom: 4px;
         margin-top: 25px;
     }
 
@@ -465,7 +597,7 @@ footer a{
     {
         background-color: #fff;
         border: 1px solid #ddd;
-        width: 200px;
+        width: 210px;
         border-radius: 10px; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         overflow: hidden;
@@ -475,9 +607,11 @@ footer a{
     }
 
     .review{
-        width: 42%;
+        width: 46%;
         margin-right: 2%;
-        margin-left: 2%;
+        margin-left: 0px;
+        margin-top: 0%;
+        padding: 7px;
     }
 
     .review img{
@@ -487,16 +621,16 @@ footer a{
         height: 140px;
         width: 70px;
     }
-    .first{
+    /* .first{
         margin-left: 10px;
-    }
+    } */
 
     /* Estilo del botones */
     .btn 
     {
         display: inline-block;
         padding: 10px 20px;
-        color: black;
+        color: #1d1645;
         border-radius: 5px;
         font-weight: bold;
         transition: background-color 0.3s ease;
@@ -504,8 +638,8 @@ footer a{
 
     .filter-btn 
     {
-        background-color: #DFD355;
-        border: 1px solid #DFD355;
+        background-color: #e9df74;
+        border: 1px solid #e9df74;
         padding: 10px;
         border-radius: 10px;
         width: 100px;
@@ -530,9 +664,11 @@ footer a{
     {
         transform: translateY(-10px); 
     }
-    img 
-    {
-        width: 300px;
+    .review:focus{
+        transform: none;
+    }
+    .review:hover{
+        transform: none;
     }
 
 
@@ -639,13 +775,22 @@ footer a{
     #tipografia  ul 
     {
         margin-top: 10px;
-        color: black;
+        color: #1d1645;
         margin-left: 25px;
     }
 
     .foot
     {
-        color: black;
+        color: #1d1645;
+    }
+    footer img{
+        width: 170px;
+    }
+    footer a{
+        color: #1d1645;
+        font-size: xx-large;
+        text-decoration: underline;
+        height: fit-content;
     }
 }
 
